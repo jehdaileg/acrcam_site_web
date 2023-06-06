@@ -67,16 +67,16 @@
                                 <div id="navbarOne">
                                     <ul id="nav" class="items-center content-start mr-auto lg:justify-end navbar-nav lg:flex">
                                         <li class="nav-item ml-5 lg:ml-11">
-                                            <a class="page-scroll active" href="#home">Home</a>
+                                            <a class="page-scroll active" href="#home">Accueil</a>
                                         </li>
                                         <li class="nav-item ml-5 lg:ml-11">
-                                            <a class="page-scroll" href="#about">About</a>
+                                            <a class="page-scroll" href="#about">A propos</a>
                                         </li>
                                         <li class="nav-item ml-5 lg:ml-11">
                                             <a class="page-scroll" href="#services">Services</a>
                                         </li>
                                         <li class="nav-item ml-5 lg:ml-11">
-                                            <a class="page-scroll" href="#work">Projects</a>
+                                            <a class="page-scroll" href="#work">Projets</a>
                                         </li>
                                         <li class="nav-item ml-5 lg:ml-11">
                                             <a class="page-scroll" href="#pricing">Pricing</a>
