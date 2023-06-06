@@ -134,10 +134,19 @@
                     <div class="row">
                         <div class="w-full lg:w-1/2">
                             <div class="header_hero_content pt-150 lg:pt-0">
-                                <h2 class="hero_title text-2xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-5xl font-extrabold">Creative Multipurpose Tailwind CSS <span class="text-theme-color">Template</span></h2>
-                                <p class="mt-8 lg:mr-8">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.</p>
+                                <h2 class="hero_title text-2xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-5xl font-extrabold">Bienvenue sur le site officiel de ACRCAM/GFC <span class="text-theme-color"> !!!</span></h2>
+                                <p class="mt-8 lg:mr-8"> <span class="font-bold">Association pour la Construction,
+                                    Réhabilitation, Conservation et
+                                    Assainissement par la Main d’œuvre en
+                                    faveur des démunis,</span> est une association sans but lucratif,
+                                    apolitique et non confessionnelle. Elle regroupe
+                                    des ingénieurs et maçons qualifiés qui œuvrent
+                                    dans le domaine de la construction, la
+                                    réhabilitation, l’aménagement et
+                                    l’assainissement principalement en bâtiment
+                                    ainsi que l’environnement dans le milieu urbain, périurbain et rural.</p>
                                 <div class="hero_btn mt-10">
-                                    <a class="main-btn" href="#0">Get Started</a>
+                                    <a class="main-btn" href="#0">Commencez</a>
                                 </div>
                             </div> <!-- header hero content -->
                         </div>
@@ -146,8 +155,8 @@
                 <div class="header_shape hidden lg:block"></div>
 
                 <div class="header_image flex items-center">
-                    <div class="image 2xl:pl-25">
-                        <img src="assets_custom/images/header-image.svg" alt="Header Image">
+                    <div class="image 4xl:pl-30">
+                        <img src="images_static_custom/construct.png" alt="Header Image">
                     </div>
                 </div> <!-- header image -->
             </div> <!-- header hero -->
@@ -162,8 +171,8 @@
                 <div class="row justify-center">
                     <div class="w-full lg:w-1/2">
                         <div class="section_title text-center pb-6">
-                            <h5 class="sub_title">About</h5>
-                            <h4 class="main_title">Work Process</h4>
+                            <h5 class="sub_title">A propos de nous !</h5>
+                            <h4 class="main_title">Nos objectifs</h4>
                         </div> <!-- section title -->
                     </div>
                 </div> <!-- row -->
@@ -177,8 +186,9 @@
                                 </svg>
                             </div>
                             <div class="services_content mt-5">
-                                <h3 class="services_title text-black font-semibold text-xl md:text-3xl">Research</h3>
-                                <p class="mt-4">Lorem ipsum dolor sit amet, consetetur sadi aliquyam erat, sed diam voluptua. At vero eos accusam et justo duo dolores </p>
+                                <h3 class="services_title text-black font-semibold text-xl md:text-3xl">Conditions d'habitation exceptionnelles.</h3>
+                                <p class="mt-4">Notre but principal est de doter à la
+                                    population de Bukavu et de ses environs les meilleures conditions d'habitation répondant aux normes urbanistiques et environnementales par ses oeuvres de construction et d'assainissement. </p>
                             </div>
                         </div> <!-- single services -->
                     </div>
@@ -191,8 +201,8 @@
                                 </svg>
                             </div>
                             <div class="services_content mt-5">
-                                <h3 class="services_title text-black font-semibold text-xl md:text-3xl">Prototype</h3>
-                                <p class="mt-4">Lorem ipsum dolor sit amet, consetetur sadi aliquyam erat, sed diam voluptua. At vero eos accusam et justo duo dolores </p>
+                                <h3 class="services_title text-black font-semibold text-xl md:text-3xl">Promouvoir l'architecture moderne.</h3>
+                                <p class="mt-4">Vulgariser et promouvoir l'architecture moderne en partenariat avec les experts locaux et inernationaux pour offrir des services convenables aux prix abordables. </p>
                             </div>
                         </div> <!-- single services -->
                     </div>
@@ -205,11 +215,59 @@
                                 </svg>
                             </div>
                             <div class="services_content mt-5">
-                                <h3 class="services_title text-black font-semibold text-xl md:text-3xl">Build</h3>
-                                <p class="mt-4">Lorem ipsum dolor sit amet, consetetur sadi aliquyam erat, sed diam voluptua. At vero eos accusam et justo duo dolores </p>
+                                <h3 class="services_title text-black font-semibold text-xl md:text-3xl">Centre d'expertise et de documentation en architecture moderne.</h3>
+                                <p class="mt-4">Organiser le centre d’expertise et de documentation en architecture moderne, en informatique accélérée, ceci en collaboration avec les partenaires d’ACRCAM afin d’offrir des services de qualités en maçonnerie, charpenterie, ferraillerie, carrelage,… par un autofinancement afin de participer à la création d’emplois aux démunis et aux jeunes désœuvrés . </p>
                             </div>
                         </div> <!-- single services -->
                     </div>
+
+                    <div class="w-full sm:w-10/12 md:w-6/12 lg:w-4/12">
+                        <div class="single_services text-center mt-8 mx-3">
+                            <div class="services_icon">
+                                <i class="lni lni-checkmark-circle"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="94" height="92" viewBox="0 0 94 92">
+                                    <path class="services_shape" id="Polygon_12" data-name="Polygon 12" d="M42.212,2.315a11,11,0,0,1,9.576,0l28.138,13.6a11,11,0,0,1,5.938,7.465L92.83,54.018A11,11,0,0,1,90.717,63.3L71.22,87.842A11,11,0,0,1,62.607,92H31.393a11,11,0,0,1-8.613-4.158L3.283,63.3A11,11,0,0,1,1.17,54.018L8.136,23.383a11,11,0,0,1,5.938-7.465Z" />
+                                </svg>
+                            </div>
+                            <div class="services_content mt-5">
+                                <h3 class="services_title text-black font-semibold text-xl md:text-3xl">Réhabilitation des travaux de génie civil.</h3>
+                                <p class="mt-4">Réhabiliter les travaux de génie civil et l’entretien des routes de desserte agricole pour désenclaver les milieux ruraux dans leur production agricole. </p>
+                            </div>
+                        </div> <!-- single services -->
+                    </div>
+
+                    <div class="w-full sm:w-10/12 md:w-6/12 lg:w-4/12">
+                        <div class="single_services text-center mt-8 mx-3">
+                            <div class="services_icon">
+                                <i class="lni lni-checkmark-circle"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="94" height="92" viewBox="0 0 94 92">
+                                    <path class="services_shape" id="Polygon_12" data-name="Polygon 12" d="M42.212,2.315a11,11,0,0,1,9.576,0l28.138,13.6a11,11,0,0,1,5.938,7.465L92.83,54.018A11,11,0,0,1,90.717,63.3L71.22,87.842A11,11,0,0,1,62.607,92H31.393a11,11,0,0,1-8.613-4.158L3.283,63.3A11,11,0,0,1,1.17,54.018L8.136,23.383a11,11,0,0,1,5.938-7.465Z" />
+                                </svg>
+                            </div>
+                            <div class="services_content mt-5">
+                                <h3 class="services_title text-black font-semibold text-xl md:text-3xl">Participation à la gestion durable de l'environnement.</h3>
+                                <p class="mt-4">Organiser des cadres d’échanges et de capacitation avec les dirigeants locaux sur les questions de la gestion durable de l’environnement, des infrastructures et de l’assainissement. </p>
+                            </div>
+                        </div> <!-- single services -->
+                    </div>
+
+                    <div class="w-full sm:w-10/12 md:w-6/12 lg:w-4/12">
+                        <div class="single_services text-center mt-8 mx-3">
+                            <div class="services_icon">
+                                <i class="lni lni-checkmark-circle"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="94" height="92" viewBox="0 0 94 92">
+                                    <path class="services_shape" id="Polygon_12" data-name="Polygon 12" d="M42.212,2.315a11,11,0,0,1,9.576,0l28.138,13.6a11,11,0,0,1,5.938,7.465L92.83,54.018A11,11,0,0,1,90.717,63.3L71.22,87.842A11,11,0,0,1,62.607,92H31.393a11,11,0,0,1-8.613-4.158L3.283,63.3A11,11,0,0,1,1.17,54.018L8.136,23.383a11,11,0,0,1,5.938-7.465Z" />
+                                </svg>
+                            </div>
+                            <div class="services_content mt-5">
+                                <h3 class="services_title text-black font-semibold text-xl md:text-3xl">Lutte contre les constructions anarchiques.</h3>
+                                <p class="mt-4">•	Lutter contre les constructions anarchiques qui provoquent souvent
+                                    des incendies et effondrement à Bukavu comme ailleurs au Sud-Kivu.
+                                     </p>
+                            </div>
+                        </div> <!-- single services -->
+                    </div>
+
                 </div> <!-- row -->
             </div> <!-- container -->
         </section>
@@ -229,17 +287,17 @@
                     <div class="w-full lg:w-1/2">
                         <div class="about_content mx-4 pt-11 lg:pt-15 lg:pb-15">
                             <div class="section_title pb-9">
-                                <h5 class="sub_title">Why Choose Us</h5>
-                                <h4 class="main_title">Your Goal is Our Achievement</h4>
+                                <h5 class="sub_title">Pourquoi choisir ACRCAM ?</h5>
+                                <h4 class="main_title">Votre satisfaction est notre réussite !</h4>
                             </div> <!-- section title -->
-                            <p>Nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua. At vero eos et accusam et justo duo dolores et rebum. Stet clita kasd gubergren, no sea takimata sanctus. </p>
+                            <p>Notre approche centrée sur le client signifie que nous sommes en mesure de fournir des solutions de construction qui répondent parfaitement aux besoins de nos clients. Nous sommes fiers de notre capacité à créer des solutions complètes qui dépassent les besoins fonctionnels et offrent une expérience globale satisfaisante. Chez Acrcam, nous sommes déterminés à offrir à nos clients un service exceptionnel et à établir des relations durables avec eux... </p>
                             <ul class="about_list pt-3">
                                 <li class="flex mt-5">
                                     <div class="about_check">
                                         <i class="lni lni-checkmark-circle"></i>
                                     </div>
                                     <div class="about_list_content pl-5 pr-2">
-                                        <p>Vero eos et accusam et justo duo dolores et rebum. Stet clita kasd gubergrenv</p>
+                                        <p>Nous sommes déterminés à offrir à nos clients une expérience positive à chaque étape du processus de construction</p>
                                     </div>
                                 </li>
                                 <li class="flex mt-5">
@@ -247,7 +305,7 @@
                                         <i class="lni lni-checkmark-circle"></i>
                                     </div>
                                     <div class="about_list_content pl-5 pr-2">
-                                        <p>At vero eos et accusam et justo duo dolores et rebum. Stet clita kasd gubergrenv</p>
+                                        <p>Nous commençons par écouter attentivement les besoins de nos clients et créons des solutions sur mesure pour répondre à leurs demandes spécifiques</p>
                                     </div>
                                 </li>
                                 <li class="flex mt-5">
@@ -255,7 +313,7 @@
                                         <i class="lni lni-checkmark-circle"></i>
                                     </div>
                                     <div class="about_list_content pl-5 pr-2">
-                                        <p>Dvero eos et accusam et justo duo dolores et rebum. Stet clita kasd gubergrenv</p>
+                                        <p> Nous utilisons des techniques de recherche de marché pour comprendre la nature des relations avec nos clients et déterminer s'il s'agit de solutions générales ou personnalisées</p>
                                     </div>
                                 </li>
                             </ul>
@@ -274,8 +332,8 @@
                 <div class="row justify-center">
                     <div class="w-full lg:w-1/2">
                         <div class="section_title text-center pb-6">
-                            <h5 class="sub_title">What We Do</h5>
-                            <h4 class="main_title">Our Services</h4>
+                            <h5 class="sub_title">Ce que nous faisons</h5>
+                            <h4 class="main_title">Nos Services</h4>
                         </div> <!-- section title -->
                     </div>
                 </div> <!-- row -->
@@ -289,7 +347,7 @@
                                 </svg>
                             </div>
                             <div class="services_content mt-5 xl:mt-10">
-                                <h3 class="services_title text-black font-semibold text-xl md:text-2xl lg:text-xl xl:text-3xl">Web Design</h3>
+                                <h3 class="services_title text-black font-semibold text-xl md:text-2xl lg:text-xl xl:text-3xl">Conception des plans et maquettes</h3>
                                 <p class="mt-4">Lorem ipsum dolor sit amet, consetetur sadi aliquyam erat, sed diam voluptua. At vero eos accusam et justo duo dolores </p>
                             </div>
                         </div> <!-- single services -->
@@ -304,7 +362,7 @@
                                 </svg>
                             </div>
                             <div class="services_content mt-5 xl:mt-10">
-                                <h3 class="services_title text-black font-semibold text-xl md:text-2xl lg:text-xl xl:text-3xl">Digital Marketing</h3>
+                                <h3 class="services_title text-black font-semibold text-xl md:text-2xl lg:text-xl xl:text-3xl">Exécution des plans</h3>
                                 <p class="mt-4">Lorem ipsum dolor sit amet, consetetur sadi aliquyam erat, sed diam voluptua. At vero eos accusam et justo duo dolores </p>
                             </div>
                         </div> <!-- single services -->
@@ -319,7 +377,7 @@
                                 </svg>
                             </div>
                             <div class="services_content mt-5 xl:mt-10">
-                                <h3 class="services_title text-black font-semibold text-xl md:text-2xl lg:text-xl xl:text-3xl">Mobile Apps</h3>
+                                <h3 class="services_title text-black font-semibold text-xl md:text-2xl lg:text-xl xl:text-3xl">Facilitation des achats et ventes des parcelles et vehicules</h3>
                                 <p class="mt-4">Lorem ipsum dolor sit amet, consetetur sadi aliquyam erat, sed diam voluptua. At vero eos accusam et justo duo dolores </p>
                             </div>
                         </div> <!-- single services -->
@@ -334,7 +392,7 @@
                                 </svg>
                             </div>
                             <div class="services_content mt-5 xl:mt-10">
-                                <h3 class="services_title text-black font-semibold text-xl md:text-2xl lg:text-xl xl:text-3xl">SEO Consultancy</h3>
+                                <h3 class="services_title text-black font-semibold text-xl md:text-2xl lg:text-xl xl:text-3xl">Assainissement.</h3>
                                 <p class="mt-4">Lorem ipsum dolor sit amet, consetetur sadi aliquyam erat, sed diam voluptua. At vero eos accusam et justo duo dolores </p>
                             </div>
                         </div> <!-- single services -->
@@ -349,7 +407,7 @@
                                 </svg>
                             </div>
                             <div class="services_content mt-5 xl:mt-10">
-                                <h3 class="services_title text-black font-semibold text-xl md:text-2xl lg:text-xl xl:text-3xl">Graphic Design</h3>
+                                <h3 class="services_title text-black font-semibold text-xl md:text-2xl lg:text-xl xl:text-3xl">Encadrement des personnes de 3ème age.</h3>
                                 <p class="mt-4">Lorem ipsum dolor sit amet, consetetur sadi aliquyam erat, sed diam voluptua. At vero eos accusam et justo duo dolores </p>
                             </div>
                         </div> <!-- single services -->
@@ -364,7 +422,7 @@
                                 </svg>
                             </div>
                             <div class="services_content mt-5 xl:mt-10">
-                                <h3 class="services_title text-black font-semibold text-xl md:text-2xl lg:text-xl xl:text-3xl">Business Consultancy</h3>
+                                <h3 class="services_title text-black font-semibold text-xl md:text-2xl lg:text-xl xl:text-3xl">Formation en batiment, technologie des batiment,</h3>
                                 <p class="mt-4">Lorem ipsum dolor sit amet, consetetur sadi aliquyam erat, sed diam voluptua. At vero eos accusam et justo duo dolores </p>
                             </div>
                         </div> <!-- single services -->
