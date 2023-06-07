@@ -54,7 +54,7 @@
                     <div class="row items-center">
                         <div class="w-full">
                             <nav class="flex items-center justify-between py-4 navbar navbar-expand-lg">
-                                <a class="navbar-brand mr-5" href="index.html"> <h6>ACRCAM</h6>
+                                <a class="navbar-brand mr-5" href=""><img class="w-20 h-20 rounded" src="images_static_custom/acrcamlog.jpg" alt="Rounded avatar"/>
                                     <!--<img src="assets_custom/images/logo.svg" alt="Logo">-->
 
                                 </a>
@@ -66,8 +66,8 @@
 
                                 <div id="navbarOne">
                                     <ul id="nav" class="items-center content-start mr-auto lg:justify-end navbar-nav lg:flex">
-                                        <li class="nav-item ml-5 lg:ml-11">
-                                            <a class="page-scroll active" href="#home">Accueil</a>
+                                        <li class="nav-item ml-5 lg:ml-11 font-bold">
+                                            <a class="page-scroll  active" href="#home">Accueil</a>
                                         </li>
                                         <li class="nav-item ml-5 lg:ml-11">
                                             <a class="page-scroll" href="#about">A propos</a>
@@ -78,14 +78,51 @@
                                         <li class="nav-item ml-5 lg:ml-11">
                                             <a class="page-scroll" href="#work">Projets</a>
                                         </li>
+
+
                                         <li class="nav-item ml-5 lg:ml-11">
-                                            <a class="page-scroll" href="#pricing">Pricing</a>
+
+
+                                    <button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Visions <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+                                    <!-- Dropdown menu -->
+                                    <div id="dropdownHover" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                                        <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownHoverButton">
+                                        <li>
+                                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
                                         </li>
+                                        <li>
+                                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign out</a>
+                                        </li>
+                                        </ul>
+                                    </div>
+
+
+
+                                        </li>
+
+
+
+
+
                                         <li class="nav-item ml-5 lg:ml-11">
-                                            <a class="page-scroll" href="#blog">Blog</a>
+                                            <a class="page-scroll" href="#pricing">Partenaires</a>
                                         </li>
+                                        <li class="nav-item ml-5 lg:ml-11 font-extrabold">
+                                            <a class="page-scroll font-extrabold" href="#pricing">Faire un Don</a>
+                                        </li>
+
                                         <li class="nav-item ml-5 lg:ml-11">
                                             <a class="page-scroll" href="#contact">Contact</a>
+                                        </li>
+
+                                        <li class="nav-item ml-5 lg:ml-11">
+                                            <a class="page-scroll" href="#blog">Connexion</a>
                                         </li>
                                     </ul>
                                 </div> <!-- navbar collapse -->
@@ -261,7 +298,7 @@
                             </div>
                             <div class="services_content mt-5">
                                 <h3 class="services_title text-black font-semibold text-xl md:text-3xl">Lutte contre les constructions anarchiques.</h3>
-                                <p class="mt-4">•	Lutter contre les constructions anarchiques qui provoquent souvent
+                                <p class="mt-4">Lutter contre les constructions anarchiques qui provoquent souvent
                                     des incendies et effondrement à Bukavu comme ailleurs au Sud-Kivu.
                                      </p>
                             </div>
@@ -348,7 +385,7 @@
                             </div>
                             <div class="services_content mt-5 xl:mt-10">
                                 <h3 class="services_title text-black font-semibold text-xl md:text-2xl lg:text-xl xl:text-3xl">Conception des plans et maquettes</h3>
-                                <p class="mt-4">Lorem ipsum dolor sit amet, consetetur sadi aliquyam erat, sed diam voluptua. At vero eos accusam et justo duo dolores </p>
+                                <p class="mt-4">Avec une expérience de 18 ans dans le domaine de Construction, notre équipe vous fournis les conceptions modernes des maisons d’habitation et de toute sorte d’immeubles</p>
                             </div>
                         </div> <!-- single services -->
                     </div>
@@ -363,7 +400,7 @@
                             </div>
                             <div class="services_content mt-5 xl:mt-10">
                                 <h3 class="services_title text-black font-semibold text-xl md:text-2xl lg:text-xl xl:text-3xl">Exécution des plans</h3>
-                                <p class="mt-4">Lorem ipsum dolor sit amet, consetetur sadi aliquyam erat, sed diam voluptua. At vero eos accusam et justo duo dolores </p>
+                                <p class="mt-4">ACRCAM possède une équipe des techniciens hautement qualifiés notamment les maçons, les ferrailleurs, les coffreurs et charpentiers, les carreleurs, bétonnier, plombiers,électriciens, peintres, jardiniers. Nous mobilisons toutes ces équipes pour l'éxecution de nos plans et maquettes. </p>
                             </div>
                         </div> <!-- single services -->
                     </div>
@@ -378,7 +415,10 @@
                             </div>
                             <div class="services_content mt-5 xl:mt-10">
                                 <h3 class="services_title text-black font-semibold text-xl md:text-2xl lg:text-xl xl:text-3xl">Facilitation des achats et ventes des parcelles et vehicules</h3>
-                                <p class="mt-4">Lorem ipsum dolor sit amet, consetetur sadi aliquyam erat, sed diam voluptua. At vero eos accusam et justo duo dolores </p>
+                                <p class="mt-4">Nous facilitons également la vente et achat des
+                                    parcelles ou maisons tout en améliorant les conditions de vente en garantissant la sécurité des acheteurs et vendeurs ainsi que celle des commissionnaires-courtiers.
+                                    Nous leur offrons en définitif un centre agrée par l’Institution Compétente au niveau provincial et national.
+                                     </p>
                             </div>
                         </div> <!-- single services -->
                     </div>
@@ -393,7 +433,7 @@
                             </div>
                             <div class="services_content mt-5 xl:mt-10">
                                 <h3 class="services_title text-black font-semibold text-xl md:text-2xl lg:text-xl xl:text-3xl">Assainissement.</h3>
-                                <p class="mt-4">Lorem ipsum dolor sit amet, consetetur sadi aliquyam erat, sed diam voluptua. At vero eos accusam et justo duo dolores </p>
+                                <p class="mt-4">Dans les milieux urbains, surtout dans la ville de Bukavu, ACRCAM promeut le droit à un environnement sain et la protection des écosystèmes, en luttant contre la pollution de l’environnement. Il est alors mis sur pied un Département de l’assainissement ayant comme mission principale la gestion rationnelle et durable de l’environnement.</p>
                             </div>
                         </div> <!-- single services -->
                     </div>
@@ -408,7 +448,12 @@
                             </div>
                             <div class="services_content mt-5 xl:mt-10">
                                 <h3 class="services_title text-black font-semibold text-xl md:text-2xl lg:text-xl xl:text-3xl">Encadrement des personnes de 3ème age.</h3>
-                                <p class="mt-4">Lorem ipsum dolor sit amet, consetetur sadi aliquyam erat, sed diam voluptua. At vero eos accusam et justo duo dolores </p>
+                                <p class="mt-4">En vue de la matérialisation de l’objectif poursuivi en ce qui est de l’encadrement et la défense des droits des personnes démunies et vulnérables, en l’occurrence la personne
+
+                                    de troisième âge (vieilles et vieux, veuves et veufs et tout autre démuni), ACRCAM asbl a ouvert un Département des PTA pour cette fin.
+
+                                    Ce Département a pour mission de s’imprégner, au jour le jour, des difficultés auxquelles les PTA de la Province du Sud-Kivu sont confrontées et proposer des solutions adéquates avec les Bureaux d’Etudes et des Programmes.
+                                    </p>
                             </div>
                         </div> <!-- single services -->
                     </div>
@@ -422,8 +467,8 @@
                                 </svg>
                             </div>
                             <div class="services_content mt-5 xl:mt-10">
-                                <h3 class="services_title text-black font-semibold text-xl md:text-2xl lg:text-xl xl:text-3xl">Formation en batiment, technologie des batiment,</h3>
-                                <p class="mt-4">Lorem ipsum dolor sit amet, consetetur sadi aliquyam erat, sed diam voluptua. At vero eos accusam et justo duo dolores </p>
+                                <h3 class="services_title text-black font-semibold text-xl md:text-2xl lg:text-xl xl:text-3xl">Formation dans différents domaines.</h3>
+                                <p class="mt-4">ACRCAM organise des formations axées sur les langues (la langue chinoise(pour tous les opérateurs économiques dont les activités ont un lien avec la chine et autres personnes dans le besoin de l'apprentissage et l'utilisation de la langue choinoise), l'anglais américain), la technologie de bâtiment (formation accélérée et recyclage en logiciels de construction et sanctionnée par un brevet de formation), le bâtiment et construction moderne, l'élevage des bêtes de race améliorée. </p>
                             </div>
                         </div> <!-- single services -->
                     </div>
@@ -440,8 +485,8 @@
                 <div class="row justify-center">
                     <div class="w-ull lg:w-1/2">
                         <div class="section_title text-center pb-6">
-                            <h5 class="sub_title">Works</h5>
-                            <h4 class="main_title">Some of Our Recent Works</h4>
+                            <h5 class="sub_title">Nos Projets</h5>
+                            <h4 class="main_title">Quelques projets récents de Acrcam</h4>
                         </div> <!-- section title -->
                     </div>
                 </div> <!-- row -->
@@ -453,7 +498,7 @@
                             <div class="single_item mx-auto">
                                 <div class="single_work mx-3">
                                     <div class="work_image">
-                                        <img src="assets_custom/images/work-1.jpg" alt="work" class="w-full">
+                                        <img src="images_static_custom/real1.jpg" alt="work" class="w-full">
                                     </div>
                                     <div class="work_content">
                                         <a href="#" class="arrow"><i class="lni lni-chevron-right"></i></a>
@@ -467,7 +512,7 @@
                             <div class="single_item mx-auto">
                                 <div class="single_work mx-3">
                                     <div class="work_image">
-                                        <img src="assets_custom/images/work-2.jpg" alt="work" class="w-full">
+                                        <img src="images_static_custom/real2.jpg" alt="work" class="w-full">
                                     </div>
                                     <div class="work_content">
                                         <a href="#" class="arrow"><i class="lni lni-chevron-right"></i></a>
@@ -481,7 +526,7 @@
                             <div class="single_item mx-auto">
                                 <div class="single_work mx-3">
                                     <div class="work_image">
-                                        <img src="assets_custom/images/work-3.jpg" alt="work" class="w-full">
+                                        <img src="images_static_custom/real3.jpg" alt="work" class="w-full">
                                     </div>
                                     <div class="work_content">
                                         <a href="#" class="arrow"><i class="lni lni-chevron-right"></i></a>
@@ -495,7 +540,7 @@
                             <div class="single_item mx-auto">
                                 <div class="single_work mx-3">
                                     <div class="work_image">
-                                        <img src="assets_custom/images/work-4.jpg" alt="work" class="w-full">
+                                        <img src="images_static_custom/real4.jpg" alt="work" class="w-full">
                                     </div>
                                     <div class="work_content">
                                         <a href="#" class="arrow"><i class="lni lni-chevron-right"></i></a>
@@ -509,7 +554,7 @@
                             <div class="single_item mx-auto">
                                 <div class="single_work mx-3">
                                     <div class="work_image">
-                                        <img src="assets_custom/images/work-5.jpg" alt="work" class="w-full">
+                                        <img src="images_static_custom/maq1.jpg" alt="work" class="w-full">
                                     </div>
                                     <div class="work_content">
                                         <a href="#" class="arrow"><i class="lni lni-chevron-right"></i></a>
@@ -523,7 +568,7 @@
                             <div class="single_item mx-auto">
                                 <div class="single_work mx-3">
                                     <div class="work_image">
-                                        <img src="assets_custom/images/work-2.jpg" alt="work" class="w-full">
+                                        <img src="images_static_custom/maq2.jpg" alt="work" class="w-full">
                                     </div>
                                     <div class="work_content">
                                         <a href="#" class="arrow"><i class="lni lni-chevron-right"></i></a>
@@ -537,7 +582,7 @@
                             <div class="single_item mx-auto">
                                 <div class="single_work mx-3">
                                     <div class="work_image">
-                                        <img src="assets_custom/images/work-4.jpg" alt="work" class="w-full">
+                                        <img src="images_static_custom/maq3.jpg" alt="work" class="w-full">
                                     </div>
                                     <div class="work_content">
                                         <a href="#" class="arrow"><i class="lni lni-chevron-right"></i></a>
@@ -864,8 +909,8 @@
                         <div class="contact_wrapper mt-11">
                             <div class="section_title pb-4">
                                 <h5 class="sub_title">Contact</h5>
-                                <h4 class="main_title">Get In Touch</h4>
-                                <p>Lorem ipsum dolor sitrg amet, consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.</p>
+                                <h4 class="main_title">Nous contacter.</h4>
+                                <p>Merci de bien vouloir nous contacter pour béneficier de nos différents services et faire partie de la communauté...</p>
                             </div> <!-- section title -->
 
                             <div class="contact_form">
@@ -929,7 +974,7 @@
                                     <a href="#"><img src="assets_custom/images/logo-footer.svg" alt=""></a>
                                 </div>
                                 <div class="footer_content mt-8">
-                                    <p class="text-white">Lorem ipsum dolor sitco nsetetu nonumy eirmod tempor invidunt ut labore et dolore magna uyam erat, sed diam.</p>
+                                    <p class="text-white">ACRCAM transforme vos plus grandes imaginations en réalité ! Merci de nous faire confiance...🎊</p>
                                 </div>
                             </div> <!-- footer about -->
                         </div>
