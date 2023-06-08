@@ -54,7 +54,7 @@
                     <div class="row items-center">
                         <div class="w-full">
                             <nav class="flex items-center justify-between py-4 navbar navbar-expand-lg">
-                                <a class="navbar-brand mr-5" href=""><img class="w-20 h-20 rounded" src="images_static_custom/acrcamlog.jpg" alt="Rounded avatar"/>
+                                <a class="navbar-brand mr-5" href=""><img class="w-15 h-15 rounded" src="images_static_custom/ll.jpg" alt="Rounded avatar"/>
                                     <!--<img src="assets_custom/images/logo.svg" alt="Logo">-->
 
                                 </a>
@@ -83,9 +83,9 @@
                                         <li class="nav-item ml-5 lg:ml-11">
 
 
-                                    <button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Visions <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+                                    <button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 group" type="button">Visions <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
                                     <!-- Dropdown menu -->
-                                    <div id="dropdownHover" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                                    <div id="dropdownHover" class="z-10 absolute hidden group-focus:block bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
                                         <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownHoverButton">
                                         <li>
                                             <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
@@ -122,7 +122,7 @@
                                         </li>
 
                                         <li class="nav-item ml-5 lg:ml-11">
-                                            <a class="page-scroll" href="#blog">Connexion</a>
+                                            <a class="" href="/projets">Connexion</a>
                                         </li>
                                     </ul>
                                 </div> <!-- navbar collapse -->
@@ -606,8 +606,8 @@
                 <div class="row justify-center">
                     <div class="w-full lg:w-1/2">
                         <div class="section_title text-center pb-6">
-                            <h5 class="sub_title">Pricing Plans</h5>
-                            <h4 class="main_title">Choose Your Plan</h4>
+                            <h5 class="sub_title">Nos Partenaires</h5>
+                            <h4 class="main_title">Ils nous font confiance:</h4>
                         </div> <!-- section title -->
                     </div>
                 </div> <!-- row -->
@@ -631,15 +631,14 @@
                                         <div class="w-full sm:w-9/12 md:w-7/12 lg:w-4/12">
                                             <div class="single_pricing text-center mt-8 mx-3">
                                                 <div class="pricing_title relative inline-block">
-                                                    <h4 class="title group-hover:text-white">Basic</h4>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="112" height="110" viewBox="0 0 112 110">
+                                                    <img class="w-25 h-24 rounded-full" src="images_static_custom/logoISP.jpeg" alt="Rounded avatar"/>
                                                         <path class="services_shape" id="Polygon_15" data-name="Polygon 15" d="M51.2,2.329a11,11,0,0,1,9.6,0L96.15,19.478a11,11,0,0,1,5.927,7.466l8.76,38.665a11,11,0,0,1-2.1,9.258l-24.508,30.96A11,11,0,0,1,75.6,110H36.4a11,11,0,0,1-8.625-4.173L3.266,74.867a11,11,0,0,1-2.1-9.258l8.76-38.665a11,11,0,0,1,5.927-7.466Z" fill="#f94f4f"/>
                                                     </svg>
                                                 </div>
                                                 <div class="pricing_content mt-6">
-                                                    <span class="pricing_price font-bold text-black text-4xl">$19.00</span>
-                                                    <p class="mt-4 leading-9">Lorem ipsum dolor sit am consetetur sadi aliquyam erat sed diam voluptua vero eos  accusam et justo duo dolores </p>
-                                                    <a href="" class="main-btn pricing_btn">Choose Plan</a>
+                                                    <span class="pricing_price font-bold text-black text-4xl">ISP/Bukavu</span>
+                                                    <p class="mt-4 leading-9">ACRCAM a travaillé et continue de travailler avec l'Institut Supérieur Pédagogique (ISP) de Bukavu sur plusieurs projets.</p>
+                                                    <a href="" class="main-btn pricing_btn">Voir le projet</a>
                                                 </div>
                                             </div>  <!-- single pricing -->
                                         </div>
@@ -647,15 +646,14 @@
                                         <div class="w-full sm:w-9/12 md:w-7/12 lg:w-4/12">
                                             <div class="single_pricing text-center mt-8 mx-3 active">
                                                 <div class="pricing_title relative inline-block">
-                                                    <h4 class="title group-hover:text-white">Standard</h4>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="112" height="110" viewBox="0 0 112 110">
+                                                    <img class="w-25 h-24 rounded-full" src="images_static_custom/ISTMLogo.jpg" alt="Rounded avatar"/>
                                                         <path class="services_shape" id="Polygon_15" data-name="Polygon 15" d="M51.2,2.329a11,11,0,0,1,9.6,0L96.15,19.478a11,11,0,0,1,5.927,7.466l8.76,38.665a11,11,0,0,1-2.1,9.258l-24.508,30.96A11,11,0,0,1,75.6,110H36.4a11,11,0,0,1-8.625-4.173L3.266,74.867a11,11,0,0,1-2.1-9.258l8.76-38.665a11,11,0,0,1,5.927-7.466Z" fill="#f94f4f"/>
                                                     </svg>
                                                 </div>
                                                 <div class="pricing_content mt-6">
-                                                    <span class="pricing_price font-bold text-black text-4xl">$39.00</span>
-                                                    <p class="mt-4 leading-9">Lorem ipsum dolor sit am consetetur sadi aliquyam erat sed diam voluptua vero eos  accusam et justo duo dolores </p>
-                                                    <a href="" class="main-btn pricing_btn">Choose Plan</a>
+                                                    <span class="pricing_price font-bold text-black text-4xl">ISTM/Bukavu</span>
+                                                    <p class="mt-4 leading-9">ISTM a travaillé et continue de travailler avec l'Institut Supérieur des Techniques Médicales (ISTM) de Bukavu sur plusieurs projets </p>
+                                                    <a href="" class="main-btn pricing_btn">Voir le projet</a>
                                                 </div>
                                             </div>  <!-- single pricing -->
                                         </div>
@@ -744,8 +742,8 @@
                 <div class="row justify-center">
                     <div class="w-full lg:w-1/2">
                         <div class="section_title text-center pb-6">
-                            <h5 class="sub_title">Team</h5>
-                            <h4 class="main_title">Meet Our Team Members</h4>
+                            <h5 class="sub_title">Notre Equipe</h5>
+                            <h4 class="main_title">Rencontrer les membres de l'entreprise</h4>
                         </div> <!-- section title -->
                     </div>
                 </div> <!-- row -->
@@ -919,7 +917,7 @@
                                         <div class="w-full md:w-1/2">
                                             <div class="mx-3">
                                                 <div class="single_form mt-8">
-                                                    <input name="name" id="name" type="text" placeholder="Name" class="w-full rounded-md py-4 px-6 border border-solid border-body-color">
+                                                    <input name="name" id="name" type="text" placeholder="Nom" class="w-full rounded-md py-4 px-6 border border-solid border-body-color">
                                                 </div> <!-- single form -->
                                             </div>
                                         </div>
@@ -941,7 +939,7 @@
                                         <div class="w-full">
                                             <div class="mx-3">
                                                 <div class="single_form mt-8">
-                                                    <button type="submit" class="main-btn contact-btn">Submit</button>
+                                                    <button type="submit" class="main-btn contact-btn">Envoyer</button>
                                                 </div> <!-- single form -->
                                             </div>
                                         </div>
@@ -971,7 +969,7 @@
                         <div class="w-full md:w-1/2 lg:w-3/12">
                             <div class="footer_about mt-13 mx-3">
                                 <div class="footer_logo">
-                                    <a href="#"><img src="assets_custom/images/logo-footer.svg" alt=""></a>
+                                    <a class="navbar-brand" href=""><img class="w-15 h-15 rounded" src="images_static_custom/ll.jpg" alt="Rounded avatar"/>
                                 </div>
                                 <div class="footer_content mt-8">
                                     <p class="text-white">ACRCAM transforme vos plus grandes imaginations en réalité ! Merci de nous faire confiance...🎊</p>
@@ -981,19 +979,19 @@
                         <div class="w-full md:w-1/2 lg:w-5/12">
                             <div class="footer_link_wrapper flex flex-wrap mx-3">
                                 <div class="footer_link w-1/2 md:pl-13 mt-13">
-                                    <h2 class="footer_title text-xl font-semibold text-white">Quick Links</h2>
+                                    <h2 class="footer_title text-xl font-semibold text-white">Liens Rapides</h2>
                                     <ul class="link pt-4">
-                                        <li><a href="#" class="text-white mt-4 hover:text-theme-color">Company</a></li>
-                                        <li><a href="#" class="text-white mt-4 hover:text-theme-color">Privacy Policy</a></li>
-                                        <li><a href="#" class="text-white mt-4 hover:text-theme-color">About</a></li>
+                                        <li><a href="#" class="text-white mt-4 hover:text-theme-color">Nos Projets</a></li>
+                                        <li><a href="#" class="text-white mt-4 hover:text-theme-color">Visiter Nos Locaux</a></li>
+
                                     </ul>
                                 </div> <!-- footer link -->
                                 <div class="footer_link w-1/2 md:pl-13 mt-13">
-                                    <h2 class="footer_title text-xl font-semibold text-white">Resources</h2>
+                                    <h2 class="footer_title text-xl font-semibold text-white">Annexes</h2>
                                     <ul class="link pt-4">
-                                        <li><a href="#" class="text-white mt-4 hover:text-theme-color">Support</a></li>
-                                        <li><a href="#" class="text-white mt-4 hover:text-theme-color">Contact</a></li>
-                                        <li><a href="#" class="text-white mt-4 hover:text-theme-color">Terms</a></li>
+                                        <li><a href="#" class="text-white mt-4 hover:text-theme-color">Notre équipe</a></li>
+                                        <li><a href="#" class="text-white mt-4 hover:text-theme-color">Nous contacter</a></li>
+
                                     </ul>
                                 </div> <!-- footer link -->
                             </div> <!-- footer link wrapper -->
@@ -1003,8 +1001,8 @@
                                 <h2 class="footer_title text-xl font-semibold text-white">Newsletter</h2>
                                 <div class="subscribe_form text-right mt-9 relative">
                                     <form action="#">
-                                        <input type="text" placeholder="Enter email" class="w-full py-5 px-6 bg-white text-black rounded-full border-none">
-                                        <button class="main-btn subscribe-btn">Subscribe</button>
+                                        <input type="text" placeholder="Entrer email" class="w-full py-5 px-6 bg-white text-black rounded-full border-none">
+                                        <button class="main-btn subscribe-btn">S'abonner</button>
                                     </form>
                                 </div>
                             </div> <!-- footer subscribe -->
@@ -1021,7 +1019,7 @@
                         </ul>
                     </div> <!-- footer social -->
                     <div class="footer_copyright_content pt-4 text-center">
-                        <p class="text-white">Designed and Developed by <a href="https://uideck.com" rel="nofollow" class="text-white hover:text-theme-color">UIdeck</a> and <a href="https://tailwindtemplates.co" rel="nofollow" class="text-white hover:text-theme-color">Tailwind Templates</a></p>
+
                     </div> <!-- footer copyright content -->
                 </div> <!-- footer copyright -->
             </div> <!-- container -->
