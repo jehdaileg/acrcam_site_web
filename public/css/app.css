@@ -550,6 +550,9 @@ video {
   margin-left: auto;
   margin-right: auto;
 }
+.mb-4 {
+  margin-bottom: 16px;
+}
 .ml-2 {
   margin-left: 8px;
 }
@@ -591,9 +594,6 @@ video {
 }
 .mt-9 {
   margin-top: 36px;
-}
-.mb-4 {
-  margin-bottom: 16px;
 }
 .block {
   display: block;
