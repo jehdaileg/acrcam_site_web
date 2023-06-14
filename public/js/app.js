@@ -5315,6 +5315,12 @@ module.exports = axios;
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
+/*require('alpinejs') ;
+
+window.alpinejs = Alpine;
+
+Alpine.start(); */
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":

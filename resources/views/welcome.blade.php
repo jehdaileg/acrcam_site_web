@@ -122,7 +122,7 @@
                                         </li>
 
                                         <li class="nav-item ml-5 lg:ml-11">
-                                            <a class="" href="/projets">Connexion</a>
+                                            <a class="" href="{{ route('login') }}">Connexion</a>
                                         </li>
                                     </ul>
                                 </div> <!-- navbar collapse -->
@@ -182,9 +182,12 @@
                                     réhabilitation, l’aménagement et
                                     l’assainissement principalement en bâtiment
                                     ainsi que l’environnement dans le milieu urbain, périurbain et rural.</p>
+
+
                                 <div class="hero_btn mt-10">
                                     <a class="main-btn" href="#0">Commencez</a>
                                 </div>
+
                             </div> <!-- header hero content -->
                         </div>
                     </div> <!-- row -->
