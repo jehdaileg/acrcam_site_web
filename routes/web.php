@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\TypeProjetController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,11 +18,17 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('HomeIndexClient');
 
 Route::get('/projetss', function () {
     return view('admin/projets/index');
 });
+
+//contact_route_management
+Route::post('/storecontact', [ContactController::class, 'store_contact'])->name('storecontact');
+
+//type_project management
+Route::resource('typeprojets', TypeProjetController::class);
 
 
 Route::get('/dashboard', function () {

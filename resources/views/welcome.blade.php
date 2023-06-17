@@ -132,7 +132,11 @@
                 </div> <!-- container -->
             </div> <!-- header navbar -->
 
+            <
+
             <div id="home" class="header_hero bg-gray relative z-10 overflow-hidden lg:flex items-center">
+
+
                 <div class="hero_shape shape_1">
                     <img src="assets_custom/images/shape/shape-1.svg" alt="shape">
                 </div><!-- hero shape -->
@@ -167,7 +171,64 @@
                     <img src="assets_custom/images/shape/shape-2.svg" alt="shape">
                 </div><!-- hero shape -->
 
+
                 <div class="container">
+
+                    @if($message = Session::get('success'))
+
+                    <div
+  class="font-regular relative block w-full max-w-screen-md rounded-lg bg-green-500 px-4 py-4 text-base text-white"
+  data-dismissible="alert"
+>
+  <div class="absolute top-2 left-2">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      aria-hidden="true"
+      class="mt-px h-6 w-6"
+    >
+      <path
+        fill-rule="evenodd"
+        d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+        clip-rule="evenodd"
+      ></path>
+    </svg>
+  </div>
+  <div class="ml-8 mr-12">
+    <h5 class="block font-sans text-xl font-semibold leading-snug tracking-normal text-white antialiased">
+      Félicitations !
+    </h5>
+    <p class="mt-2 block font-sans text-base font-normal leading-relaxed text-white antialiased">
+     {{ $message }}
+    </p>
+  </div>
+  <div
+    data-dismissible-target="alert"
+    data-ripple-dark="true"
+    class="absolute top-3 right-3 w-max rounded-lg transition-all hover:bg-white hover:bg-opacity-20"
+  >
+    <div role="button" class="w-max rounded-lg p-1">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-6 w-6"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M6 18L18 6M6 6l12 12"
+        ></path>
+      </svg>
+    </div>
+  </div>
+</div>
+    @endif
+
+
                     <div class="row">
                         <div class="w-full lg:w-1/2">
                             <div class="header_hero_content pt-150 lg:pt-0">
@@ -915,7 +976,8 @@
                             </div> <!-- section title -->
 
                             <div class="contact_form">
-                                <form id="contact-form" action="assets/php/contact.php" method="POST">
+                                <form id="contact-form" action="{{  route('storecontact')}}" method="POST">
+                                    @csrf
                                     <div class="row">
                                         <div class="w-full md:w-1/2">
                                             <div class="mx-3">
@@ -931,6 +993,15 @@
                                                 </div> <!-- single form -->
                                             </div>
                                         </div>
+
+                                        <div class="w-full md:w-1/2">
+                                            <div class="mx-3">
+                                                <div class="single_form mt-8">
+                                                    <input name="phone" id="email" type="phone" placeholder="Votre numéro de téléphone" class="w-full rounded-md py-4 px-6 border border-solid border-body-color">
+                                                </div> <!-- single form -->
+                                            </div>
+                                        </div>
+
                                         <div class="w-full">
                                             <div class="mx-3">
                                                 <div class="single_form mt-8">

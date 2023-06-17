@@ -10,6 +10,8 @@ class TypeProjet extends Model
 {
     use HasFactory;
 
+    protected $fillable = ['nameTypeProjet'];
+
     public function projets() :HasMany
     {
         return $this->hasMany(Projet::class);

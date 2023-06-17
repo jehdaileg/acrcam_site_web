@@ -108,7 +108,7 @@
               <span class="">Gestion des Projets</span>
             </a>
             <a
-              href=""
+              href="{{ route('typeprojets.index') }}"
               class="text-sm font-medium text-gray-700 py-2 px-2 hover:bg-teal-500 hover:text-white hover:scale-105 rounded-md transition duration-150 ease-in-out"
             >
               <svg
@@ -228,6 +228,8 @@
 
       <section>
         <main class="ml-2 mr-2 mt-2 mb-2 content-center">
+
+
             @yield('main_content_admin_part')
         </main>
     </section>

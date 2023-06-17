@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\TypeProjet;
 use Illuminate\Http\Request;
 
 class TypeProjetController extends Controller
@@ -12,6 +13,9 @@ class TypeProjetController extends Controller
     public function index()
     {
         //
+        $types_projets = TypeProjet::all();
+
+        return view('admin.typeprojets.index', compact('types_projets'));
     }
 
     /**
@@ -20,6 +24,9 @@ class TypeProjetController extends Controller
     public function create()
     {
         //
+
+        return view('admin.typeprojets.create');
+
     }
 
     /**
@@ -28,6 +35,13 @@ class TypeProjetController extends Controller
     public function store(Request $request)
     {
         //
+        $request->validate([
+            'nameTypeProjet' => 'required'
+        ]);
+
+        TypeProjet::create($request->all());
+
+        return redirect()->route('typeprojets.index')->with('success', 'Type de projet crée avec succès !');
     }
 
     /**
@@ -41,9 +55,13 @@ class TypeProjetController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(TypeProjet $type_projet)
     {
         //
+        dd($type_projet->nameTypeProjet);
+
+        return view('admin.typeprojets.edit', compact('type_projet'));
+
     }
 
     /**
@@ -57,8 +75,14 @@ class TypeProjetController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(TypeProjet $typeprojet)
     {
         //
+
+        //dd($typeprojet);
+        $typeprojet->delete();
+
+        return redirect()->route('typeprojets.index')->with('success', 'Type de projet Supprimé avec succès !');
+
     }
 }
