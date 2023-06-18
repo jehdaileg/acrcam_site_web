@@ -55,21 +55,34 @@ class TypeProjetController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(TypeProjet $type_projet)
+    public function edit(TypeProjet  $typeprojet)
     {
         //
-        dd($type_projet->nameTypeProjet);
+      //  dd($typeprojet);
 
-        return view('admin.typeprojets.edit', compact('type_projet'));
+       // $type_projet = TypeProjet::find($id)->get();
+
+      //  dd($type_projet);
+
+        return view('admin.typeprojets.edit', compact('typeprojet'));
 
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, TypeProjet  $typeprojet)
     {
         //
+        $request->validate([
+            'nameTypeProjet' => 'required'
+        ]);
+
+        $typeprojet->update($request->all());
+
+        return redirect()->route('typeprojets.index')->with('success', 'Type de projet Modifié avec succès !');
+
+
     }
 
     /**

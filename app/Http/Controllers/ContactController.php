@@ -20,7 +20,16 @@ class ContactController extends Controller
 
        Contact::create($request->all());
 
-       return redirect()->route('HomeIndexClient')->with('success', 'Merci de nous avoir contactés ! Vous recevrez un message dans les 24 heures pour votre requête.👍');
+       return redirect()->route('HomeIndexClient')->with('success_contact', 'Merci de nous avoir contactés ! Vous recevrez un message dans les 24 heures pour votre requête.👍');
+    }
+
+    //side admin
+    public function index_admin()
+    {
+        $contacts = Contact::latest()->paginate(2);
+
+
+        return view('admin.contacts.index', compact('contacts'));
     }
 
 }

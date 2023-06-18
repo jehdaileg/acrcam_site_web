@@ -114,7 +114,7 @@
                                             <a class="page-scroll" href="#pricing">Partenaires</a>
                                         </li>
                                         <li class="nav-item ml-5 lg:ml-11 font-extrabold">
-                                            <a class="page-scroll font-extrabold" href="#pricing">Faire un Don</a>
+                                            <a class="" href="/faireUnDon">Faire un Don</a>
                                         </li>
 
                                         <li class="nav-item ml-5 lg:ml-11">
@@ -174,7 +174,7 @@
 
                 <div class="container">
 
-                    @if($message = Session::get('success'))
+                    @if($message = Session::get('success_contact'))
 
                     <div
   class="font-regular relative block w-full max-w-screen-md rounded-lg bg-green-500 px-4 py-4 text-base text-white"
@@ -232,7 +232,7 @@
                     <div class="row">
                         <div class="w-full lg:w-1/2">
                             <div class="header_hero_content pt-150 lg:pt-0">
-                                <h2 class="hero_title text-2xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-5xl font-extrabold">Bienvenue sur le site officiel de ACRCAM/GFC <span class="text-theme-color"> !!!</span></h2>
+                                <h2 class="hero_title text-2xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-5xl font-extrabold">Bienvenue sur le site officiel de GFC/ACRCAM <span class="text-theme-color"> !!!</span></h2>
                                 <p class="mt-8 lg:mr-8"> <span class="font-bold">Association pour la Construction,
                                     Réhabilitation, Conservation et
                                     Assainissement par la Main d’œuvre en
@@ -246,7 +246,7 @@
 
 
                                 <div class="hero_btn mt-10">
-                                    <a class="main-btn" href="#0">Commencez</a>
+                                    <a class="main-btn page-scroll" href="#contact">Expérimenter.</a>
                                 </div>
 
                             </div> <!-- header hero content -->

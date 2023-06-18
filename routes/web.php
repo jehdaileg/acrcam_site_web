@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\FaireUnDonController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\TypeProjetController;
 use Illuminate\Support\Facades\Route;
@@ -26,10 +27,16 @@ Route::get('/projetss', function () {
 
 //contact_route_management
 Route::post('/storecontact', [ContactController::class, 'store_contact'])->name('storecontact');
+Route::get('/contact_management', [ContactController::class, 'index_admin'])->name('contact.admin');
 
 //type_project management
 Route::resource('typeprojets', TypeProjetController::class);
+Route::get('typeprojet.edit/{typeprojet}', [TypeProjetController::class, 'edit'])->name('editTypeP');
 
+//Faire un Don management part
+Route::get('/faireUnDon', [FaireUnDonController::class, 'index'])->name('faireundon');
+Route::post('/faireUnDon', [FaireUnDonController::class, 'storeDon'])->name('faireundon.store');
+Route::get('/faireundon_management', [FaireUnDonController::class, 'index_admin'])->name('faireundon.admin');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
