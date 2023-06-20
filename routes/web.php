@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\FaireUnDonController;
+use App\Http\Controllers\PartenaireController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\TypeProjetController;
 use Illuminate\Support\Facades\Route;
@@ -32,6 +33,12 @@ Route::get('/contact_management', [ContactController::class, 'index_admin'])->na
 //type_project management
 Route::resource('typeprojets', TypeProjetController::class);
 Route::get('typeprojet.edit/{typeprojet}', [TypeProjetController::class, 'edit'])->name('editTypeP');
+
+
+//partenaires_management
+Route::resource('partenaires', PartenaireController::class);
+Route::get('partenaire.edit/{partenaire}', [PartenaireController::class, 'edit'])->name('editPart');
+
 
 //Faire un Don management part
 Route::get('/faireUnDon', [FaireUnDonController::class, 'index'])->name('faireundon');

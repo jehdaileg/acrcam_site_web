@@ -68,49 +68,42 @@
 
     </div>
 
+ <table class="shadow-lg bg-white border-collapse absolute">
+    <thead>
+        <tr>
+            <th class="bg-blue-100 border text-left px-5 py-2">Type de Projet</th>
+            <th class="bg-blue-100 border text-left px-5 py-2">Actions</th>
+
+          </tr>
+
+    </thead>
+
+    <tbody>
+
+        @foreach($types_projets as $type_projet)
 
 
-<div class="relative overflow-x-auto">
-    <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-            <tr>
-                <th scope="col" class="px-6 py-3">
-                    Type de Projet
-                </th>
-                <th scope="col" class="px-6 py-3">
-                    Actions
-                </th>
-
-            </tr>
-        </thead>
-        <tbody>
-            @foreach($types_projets as $type_projet)
-
-            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                    {{ $type_projet->nameTypeProjet }}
-                </th>
-                <td class="px-6 py-4 ">
-                    <a href="{{ route('editTypeP', $type_projet) }}" class="px-2 py-2 text-white bg-green-400 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-8 sm:w-auto  py-4.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Editer</a>
-                   <form action="{{ route('typeprojets.destroy', $type_projet->id) }}" method="post" class="mt-2">
+        <tr>
+            <td class="border px-5 py-2">{{ $type_projet->nameTypeProjet }}</td>
+            <td class="border px-5 py-2 flex ">
+                <a href="{{ route('editTypeP', $type_projet) }}" class="px-2 py-2 text-white bg-green-400 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-8 sm:w-auto  py-4.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Editer</a>
+                <form action="{{ route('typeprojets.destroy', $type_projet->id) }}" method="post" class="mt-2">
                     @csrf
                     @method('DELETE')
 
                     <button type="submit" onclick="return confirm('Voulez-vous vraiment supprimer ce type de projet ?');" class="px-2 py-2 text-white bg-red-400 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-8 sm:w-auto  py-4.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Supprimer</button>
                    </form>
+            </td>
 
 
-                </td>
-
-            </tr>
-            @endforeach
+          </tr>
 
 
+          @endforeach
+    </tbody>
 
 
-        </tbody>
-    </table>
-</div>
+  </table>
 
 
 @stop
