@@ -12,7 +12,9 @@ class Projet extends Model
 {
     use HasFactory;
 
-    public function typeprojet() : BelongsTo
+    protected $fillable = ['name', 'commmentaires_projet', 'date_realisation', 'partenaire_concerne','revenu_benefice_projet', 'statut_projet', 'type_projet_id'];
+
+    public function type_projet() : BelongsTo
     {
         return $this->belongsTo(TypeProjet::class);
     }
@@ -20,6 +22,14 @@ class Projet extends Model
     public function imageprojets() : HasMany
     {
         return $this->hasMany(ImageProjet::class);
+    }
+
+    public function getStatusProjet()
+    {
+        return [
+            '1' => 'En cours de réalisation',
+            '2' => 'Réalisé'
+        ];
     }
 
 }

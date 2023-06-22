@@ -4,6 +4,7 @@ use App\Http\Controllers\ContactController;
 use App\Http\Controllers\FaireUnDonController;
 use App\Http\Controllers\PartenaireController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ProjetController;
 use App\Http\Controllers\TypeProjetController;
 use Illuminate\Support\Facades\Route;
 
@@ -33,6 +34,12 @@ Route::get('/contact_management', [ContactController::class, 'index_admin'])->na
 //type_project management
 Route::resource('typeprojets', TypeProjetController::class);
 Route::get('typeprojet.edit/{typeprojet}', [TypeProjetController::class, 'edit'])->name('editTypeP');
+
+//projet_management
+Route::resource('projets', ProjetController::class);
+Route::get('projets.edit/{projet}', [ProjetController::class, 'edit'])->name('editProjet');
+
+
 
 
 //partenaires_management
