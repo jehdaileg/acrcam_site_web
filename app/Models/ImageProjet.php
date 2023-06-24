@@ -11,6 +11,8 @@ class ImageProjet extends Model
 {
     use HasFactory;
 
+    protected $fillable = ['projet_id', 'image_projet'];
+
     public function projet(): BelongsTo
     {
         return $this->belongsTo(Projet::class);

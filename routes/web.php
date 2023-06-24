@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\FaireUnDonController;
+use App\Http\Controllers\ImageProjetController;
 use App\Http\Controllers\PartenaireController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ProjetController;
@@ -38,6 +39,10 @@ Route::get('typeprojet.edit/{typeprojet}', [TypeProjetController::class, 'edit']
 //projet_management
 Route::resource('projets', ProjetController::class);
 Route::get('projets.edit/{projet}', [ProjetController::class, 'edit'])->name('editProjet');
+
+//image_mangement
+Route::resource('imagesprojets', ImageProjetController::class);
+
 
 
 
