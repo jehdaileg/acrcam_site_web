@@ -57,6 +57,12 @@ Route::get('/faireUnDon', [FaireUnDonController::class, 'index'])->name('faireun
 Route::post('/faireUnDon', [FaireUnDonController::class, 'storeDon'])->name('faireundon.store');
 Route::get('/faireundon_management', [FaireUnDonController::class, 'index_admin'])->name('faireundon.admin');
 
+//visions
+
+Route::get('/visions', function(){
+    return view('visions');
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');

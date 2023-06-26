@@ -81,34 +81,8 @@
 
 
                                         <li class="nav-item ml-5 lg:ml-11">
-
-
-                                    <button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 group" type="button">Visions <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
-                                    <!-- Dropdown menu -->
-                                    <div id="dropdownHover" class="z-10 absolute hidden group-focus:block bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
-                                        <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownHoverButton">
-                                        <li>
-                                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                                            <a class="" href="/visions">Visions</a>
                                         </li>
-                                        <li>
-                                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign out</a>
-                                        </li>
-                                        </ul>
-                                    </div>
-
-
-
-                                        </li>
-
-
-
-
 
                                         <li class="nav-item ml-5 lg:ml-11">
                                             <a class="page-scroll" href="#pricing">Partenaires</a>
@@ -677,16 +651,7 @@
                 </div> <!-- row -->
                 <div class="row">
                     <div class="w-full">
-                        <div class="pricing_menu mt-8 pb-8">
-                            <ul class="flex justify-center">
-                                <li class="nav-item">
-                                    <button class="active bg-gray text-body-color py-3 px-8 rounded-tl-full rounded-bl-full" data-tab-target="#monthlyPlan">Monthly</button>
-                                </li>
-                                <li class="nav-item">
-                                    <button class="bg-gray text-body-color py-3 px-8 rounded-tr-full rounded-br-full" data-tab-target="#yearlyPlan">Yearly</button>
-                                </li>
-                            </ul>
-                        </div> <!-- pricing menu -->
+
 
                         <div class="pricing_content mt-6_area">
                             <div class="tab-content">
@@ -702,7 +667,7 @@
                                                 <div class="pricing_content mt-6">
                                                     <span class="pricing_price font-bold text-black text-4xl">ISP/Bukavu</span>
                                                     <p class="mt-4 leading-9">ACRCAM a travaillé et continue de travailler avec l'Institut Supérieur Pédagogique (ISP) de Bukavu sur plusieurs projets.</p>
-                                                    <a href="" class="main-btn pricing_btn">Voir le projet</a>
+
                                                 </div>
                                             </div>  <!-- single pricing -->
                                         </div>
@@ -717,7 +682,7 @@
                                                 <div class="pricing_content mt-6">
                                                     <span class="pricing_price font-bold text-black text-4xl">ISTM/Bukavu</span>
                                                     <p class="mt-4 leading-9">ISTM a travaillé et continue de travailler avec l'Institut Supérieur des Techniques Médicales (ISTM) de Bukavu sur plusieurs projets </p>
-                                                    <a href="" class="main-btn pricing_btn">Voir le projet</a>
+
                                                 </div>
                                             </div>  <!-- single pricing -->
                                         </div>
@@ -733,7 +698,7 @@
                                                 <div class="pricing_content mt-6">
                                                     <span class="pricing_price font-bold text-black text-4xl">$99.00</span>
                                                     <p class="mt-4 leading-9">Lorem ipsum dolor sit am consetetur sadi aliquyam erat sed diam voluptua vero eos  accusam et justo duo dolores </p>
-                                                    <a href="" class="main-btn pricing_btn">Choose Plan</a>
+
                                                 </div>
                                             </div>  <!-- single pricing -->
                                         </div>
@@ -817,16 +782,15 @@
                             <div class="single_team_item mx-auto">
                                 <div class="single_team mx-3">
                                     <div class="team_image relative">
-                                        <img src="assets_custom/images/team-1.jpg" alt="team" class="w-full">
+                                        <img src="team_acrcam/ntamugale_keffa_ceo.jpg" alt="team" class="w-full">
                                         <ul class="social absolute top-4 right-8">
                                             <li><a href="#"><i class="lni lni-facebook-filled"></i></a></li>
-                                            <li><a href="#"><i class="lni lni-twitter-filled"></i></a></li>
-                                            <li><a href="#"><i class="lni lni-linkedin-original"></i></a></li>
+
                                         </ul>
                                     </div>
                                     <div class="team_content py-5 px-8 relative">
-                                        <h4 class="team_name text-xl md:text-2xl"><a href="#" class="text-black group-hover:text-white">Chris Dave</a></h4>
-                                        <p class="mt-2 transition-all duration-300 group-hover:text-white">Founder and CEO</p>
+                                        <h4 class="team_name text-xl md:text-2xl"><a href="#" class="text-black group-hover:text-white">Ntamulage Keffa</a></h4>
+                                        <p class="mt-2 transition-all duration-300 group-hover:text-white">Coordonateur, Gérant et CEO</p>
                                     </div>
                                 </div> <!-- single team -->
                             </div>
@@ -835,16 +799,15 @@
                             <div class="single_team_item mx-auto">
                                 <div class="single_team mx-3">
                                     <div class="team_image relative">
-                                        <img src="assets_custom/images/team-3.jpg" alt="team" class="w-full">
+                                        <img src="team_acrcam/ndosi_jonathan.jpg" alt="team" class="w-full">
                                         <ul class="social absolute top-4 right-8">
                                             <li><a href="#"><i class="lni lni-facebook-filled"></i></a></li>
-                                            <li><a href="#"><i class="lni lni-twitter-filled"></i></a></li>
-                                            <li><a href="#"><i class="lni lni-linkedin-original"></i></a></li>
+
                                         </ul>
                                     </div>
                                     <div class="team_content py-5 px-8 relative">
-                                        <h4 class="team_name text-xl md:text-2xl"><a href="#" class="text-black group-hover:text-white">Sarah Doe</a></h4>
-                                        <p class="mt-2 transition-all duration-300 group-hover:text-white">UI Designer</p>
+                                        <h4 class="team_name text-xl md:text-2xl"><a href="#" class="text-black group-hover:text-white">Ndosi Jonathan</a></h4>
+                                        <p class="mt-2 transition-all duration-300 group-hover:text-white">Chargé de l'admnistration et finance</p>
                                     </div>
                                 </div> <!-- single team -->
                             </div>
@@ -853,16 +816,15 @@
                             <div class="single_team_item mx-auto">
                                 <div class="single_team mx-3">
                                     <div class="team_image relative">
-                                        <img src="assets_custom/images/team-5.jpg" alt="team" class="w-full">
+                                        <img src="team_acrcam/mapendo_dorcas.jpg" alt="team" class="w-full">
                                         <ul class="social absolute top-4 right-8">
                                             <li><a href="#"><i class="lni lni-facebook-filled"></i></a></li>
-                                            <li><a href="#"><i class="lni lni-twitter-filled"></i></a></li>
-                                            <li><a href="#"><i class="lni lni-linkedin-original"></i></a></li>
+
                                         </ul>
                                     </div>
                                     <div class="team_content py-5 px-8 relative">
-                                        <h4 class="team_name text-xl md:text-2xl"><a href="#" class="text-black group-hover:text-white">Rob Hope</a></h4>
-                                        <p class="mt-2 transition-all duration-300 group-hover:text-white">Dr. Software Engineer</p>
+                                        <h4 class="team_name text-xl md:text-2xl"><a href="#" class="text-black group-hover:text-white">Dorcas Mapendo</a></h4>
+                                        <p class="mt-2 transition-all duration-300 group-hover:text-white">Coordonatrice adjointe</p>
                                     </div>
                                 </div> <!-- single team -->
                             </div>
@@ -871,20 +833,167 @@
                             <div class="single_team_item mx-auto">
                                 <div class="single_team mx-3">
                                     <div class="team_image relative">
-                                        <img src="assets_custom/images/team-2.jpg" alt="team" class="w-full">
+                                        <img src="team_acrcam/raphael.jpg" alt="team" class="w-full">
                                         <ul class="social absolute top-4 right-8">
                                             <li><a href="#"><i class="lni lni-facebook-filled"></i></a></li>
-                                            <li><a href="#"><i class="lni lni-twitter-filled"></i></a></li>
-                                            <li><a href="#"><i class="lni lni-linkedin-original"></i></a></li>
+
                                         </ul>
                                     </div>
                                     <div class="team_content py-5 px-8 relative">
-                                        <h4 class="team_name text-xl md:text-2xl"><a href="#" class="text-black group-hover:text-white">Micheal Jordan</a></h4>
-                                        <p class="mt-2 transition-all duration-300 group-hover:text-white">Business Development Manager</p>
+                                        <h4 class="team_name text-xl md:text-2xl"><a href="#" class="text-black group-hover:text-white">Raphael</a></h4>
+                                        <p class="mt-2 transition-all duration-300 group-hover:text-white">Président du conseil d'administration</p>
                                     </div>
                                 </div> <!-- single team -->
                             </div>
                         </div>
+
+                        <div class="w-full lg:w-4/12">
+                            <div class="single_team_item mx-auto">
+                                <div class="single_team mx-3">
+                                    <div class="team_image relative">
+                                        <img src="team_acrcam/antonia.jpg" alt="team" class="w-full">
+                                        <ul class="social absolute top-4 right-8">
+                                            <li><a href="#"><i class="lni lni-facebook-filled"></i></a></li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="team_content py-5 px-8 relative">
+                                        <h4 class="team_name text-xl md:text-2xl"><a href="#" class="text-black group-hover:text-white">Antonia</a></h4>
+                                        <p class="mt-2 transition-all duration-300 group-hover:text-white">Caissière</p>
+                                    </div>
+                                </div> <!-- single team -->
+                            </div>
+                        </div>
+
+                          <div class="w-full lg:w-4/12">
+                            <div class="single_team_item mx-auto">
+                                <div class="single_team mx-3">
+                                    <div class="team_image relative">
+                                        <img src="team_acrcam/answer.jpg" alt="team" class="w-full">
+                                        <ul class="social absolute top-4 right-8">
+                                            <li><a href="#"><i class="lni lni-facebook-filled"></i></a></li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="team_content py-5 px-8 relative">
+                                        <h4 class="team_name text-xl md:text-2xl"><a href="#" class="text-black group-hover:text-white">Answer</a></h4>
+                                        <p class="mt-2 transition-all duration-300 group-hover:text-white">Secretaire</p>
+                                    </div>
+                                </div> <!-- single team -->
+                            </div>
+                        </div>
+
+                          <div class="w-full lg:w-4/12">
+                            <div class="single_team_item mx-auto">
+                                <div class="single_team mx-3">
+                                    <div class="team_image relative">
+                                        <img src="team_acrcam/me_alexandre.jpg" alt="team" class="w-full">
+                                        <ul class="social absolute top-4 right-8">
+                                            <li><a href="#"><i class="lni lni-facebook-filled"></i></a></li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="team_content py-5 px-8 relative">
+                                        <h4 class="team_name text-xl md:text-2xl"><a href="#" class="text-black group-hover:text-white">Maître Alexandre</a></h4>
+                                        <p class="mt-2 transition-all duration-300 group-hover:text-white">Conseiller en matière juridique et administrative </p>
+                                    </div>
+                                </div> <!-- single team -->
+                            </div>
+                        </div>
+
+
+                        <div class="w-full lg:w-4/12">
+                            <div class="single_team_item mx-auto">
+                                <div class="single_team mx-3">
+                                    <div class="team_image relative">
+                                        <img src="team_acrcam/gloire.jpg" alt="team" class="w-full">
+                                        <ul class="social absolute top-4 right-8">
+                                            <li><a href="#"><i class="lni lni-facebook-filled"></i></a></li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="team_content py-5 px-8 relative">
+                                        <h4 class="team_name text-xl md:text-2xl"><a href="#" class="text-black group-hover:text-white">Gloire</a></h4>
+                                        <p class="mt-2 transition-all duration-300 group-hover:text-white">Chargé de la logistique </p>
+                                    </div>
+                                </div> <!-- single team -->
+                            </div>
+                        </div>
+
+                        <div class="w-full lg:w-4/12">
+                            <div class="single_team_item mx-auto">
+                                <div class="single_team mx-3">
+                                    <div class="team_image relative">
+                                        <img src="team_acrcam/blaise_muta.jpg" alt="team" class="w-full">
+                                        <ul class="social absolute top-4 right-8">
+                                            <li><a href="#"><i class="lni lni-facebook-filled"></i></a></li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="team_content py-5 px-8 relative">
+                                        <h4 class="team_name text-xl md:text-2xl"><a href="#" class="text-black group-hover:text-white">Blaise Mutala</a></h4>
+                                        <p class="mt-2 transition-all duration-300 group-hover:text-white">Chef  du bureau d'étude </p>
+                                    </div>
+                                </div> <!-- single team -->
+                            </div>
+                        </div>
+
+                        <div class="w-full lg:w-4/12">
+                            <div class="single_team_item mx-auto">
+                                <div class="single_team mx-3">
+                                    <div class="team_image relative">
+                                        <img src="team_acrcam/elias_kab.jpg" alt="team" class="w-full">
+                                        <ul class="social absolute top-4 right-8">
+                                            <li><a href="#"><i class="lni lni-facebook-filled"></i></a></li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="team_content py-5 px-8 relative">
+                                        <h4 class="team_name text-xl md:text-2xl"><a href="#" class="text-black group-hover:text-white">Elias Kabongo</a></h4>
+                                        <p class="mt-2 transition-all duration-300 group-hover:text-white">Chef adjoint du bureau d'étude </p>
+                                    </div>
+                                </div> <!-- single team -->
+                            </div>
+                        </div>
+
+                        <div class="w-full lg:w-4/12">
+                            <div class="single_team_item mx-auto">
+                                <div class="single_team mx-3">
+                                    <div class="team_image relative">
+                                        <img src="team_acrcam/fidele_bir.jpg" alt="team" class="w-full">
+                                        <ul class="social absolute top-4 right-8">
+                                            <li><a href="#"><i class="lni lni-facebook-filled"></i></a></li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="team_content py-5 px-8 relative">
+                                        <h4 class="team_name text-xl md:text-2xl"><a href="#" class="text-black group-hover:text-white">Fidèle Biringanine</a></h4>
+                                        <p class="mt-2 transition-all duration-300 group-hover:text-white">Chef de charrois automobile</p>
+                                    </div>
+                                </div> <!-- single team -->
+                            </div>
+                        </div>
+
+                        <div class="w-full lg:w-4/12">
+                            <div class="single_team_item mx-auto">
+                                <div class="single_team mx-3">
+                                    <div class="team_image relative">
+                                        <img src="team_acrcam/gisele.jpg" alt="team" class="w-full">
+                                        <ul class="social absolute top-4 right-8">
+                                            <li><a href="#"><i class="lni lni-facebook-filled"></i></a></li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="team_content py-5 px-8 relative">
+                                        <h4 class="team_name text-xl md:text-2xl"><a href="#" class="text-black group-hover:text-white">Gisèle</a></h4>
+                                        <p class="mt-2 transition-all duration-300 group-hover:text-white">Receptionniste</p>
+                                    </div>
+                                </div> <!-- single team -->
+                            </div>
+                        </div>
+
+
+
                     </div> <!-- row -->
                 </div>
             </div> <!-- container -->
@@ -892,69 +1001,7 @@
 
         <!--====== TEAM PART ENDS ======-->
 
-        <!--====== BLOG PART START ======-->
 
-        <section id="blog" class="blog_area pt-120">
-            <div class="container">
-                <div class="row justify-center">
-                    <div class="w-full lg:w-1/2">
-                        <div class="section_title text-center pb-6">
-                            <h5 class="sub_title">Blog</h5>
-                            <h4 class="main_title">From The Blog</h4>
-                        </div> <!-- section title -->
-                    </div>
-                </div> <!-- row -->
-                <div class="row justify-center lg:justify-start">
-                    <div class="w-full md:w-8/12 lg:w-6/12 xl:w-4/12">
-                        <div class="single_blog mx-3 mt-8 rounded-xl bg-white transition-all duration-300 overflow-hidden hover:shadow-lg">
-                            <div class="blog_image">
-                                <img src="assets_custom/images/blog-1.jpg" alt="blog" class="w-full">
-                            </div>
-                            <div class="blog_content p-4 md:p-5">
-                                <ul class="blog_meta flex justify-between">
-                                    <li class="text-body-color text-sm md:text-base">By: <a href="#" class="text-body-color hover:text-theme-color">Musharof Chowdury</a></li>
-                                    <li class="text-body-color text-sm md:text-base">15 June 2024</li>
-                                </ul>
-                                <h3 class="blog_title"><a href="#">How to track your business revenue</a></h3>
-                                <a href="#" class="more_btn">Read More</a>
-                            </div>
-                        </div> <!-- row -->
-                    </div>
-                    <div class="w-full md:w-8/12 lg:w-6/12 xl:w-4/12">
-                        <div class="single_blog mx-3 mt-8 rounded-xl bg-white transition-all duration-300 overflow-hidden hover:shadow-lg">
-                            <div class="blog_image">
-                                <img src="assets_custom/images/blog-2.jpg" alt="blog" class="w-full">
-                            </div>
-                            <div class="blog_content p-4 md:p-5">
-                                <ul class="blog_meta flex justify-between">
-                                    <li class="text-body-color text-sm md:text-base">By: <a href="#" class="text-body-color hover:text-theme-color">Musharof Chowdury</a></li>
-                                    <li class="text-body-color text-sm md:text-base">15 June 2024</li>
-                                </ul>
-                                <h3 class="blog_title"><a href="#">Improving products depending on feedback</a></h3>
-                                <a href="#" class="more_btn">Read More</a>
-                            </div>
-                        </div> <!-- row -->
-                    </div>
-                    <div class="w-full md:w-8/12 lg:w-6/12 xl:w-4/12">
-                        <div class="single_blog mx-3 mt-8 rounded-xl bg-white transition-all duration-300 overflow-hidden hover:shadow-lg">
-                            <div class="blog_image">
-                                <img src="assets_custom/images/blog-3.jpg" alt="blog" class="w-full">
-                            </div>
-                            <div class="blog_content p-4 md:p-5">
-                                <ul class="blog_meta flex justify-between">
-                                    <li class="text-body-color text-sm md:text-base">By: <a href="#" class="text-body-color hover:text-theme-color">Musharof Chowdury</a></li>
-                                    <li class="text-body-color text-sm md:text-base">15 June 2024</li>
-                                </ul>
-                                <h3 class="blog_title"><a href="#">How to diversify your audience</a></h3>
-                                <a href="#" class="more_btn">Read More</a>
-                            </div>
-                        </div> <!-- row -->
-                    </div>
-                </div> <!-- row -->
-            </div> <!-- container -->
-        </section>
-
-        <!--====== BLOG PART ENDS ======-->
 
         <!--====== CONTACT PART START ======-->
 
@@ -1070,27 +1117,12 @@
                                 </div> <!-- footer link -->
                             </div> <!-- footer link wrapper -->
                         </div>
-                        <div class="w-full md:w-2/3 lg:w-4/12">
-                            <div class="footer_subscribe mt-13 mx-3">
-                                <h2 class="footer_title text-xl font-semibold text-white">Newsletter</h2>
-                                <div class="subscribe_form text-right mt-9 relative">
-                                    <form action="#">
-                                        <input type="text" placeholder="Entrer email" class="w-full py-5 px-6 bg-white text-black rounded-full border-none">
-                                        <button class="main-btn subscribe-btn">S'abonner</button>
-                                    </form>
-                                </div>
-                            </div> <!-- footer subscribe -->
-                        </div>
+
                     </div> <!-- row -->
                 </div> <!-- footer widget -->
                 <div class="footer_copyright pt-3 pb-6 border-t-2 border-solid border-white border-opacity-10 sm:flex justify-between">
                     <div class="footer_social pt-4 mx-3 text-center">
-                        <ul class="social flex justify-center sm:justify-start">
-                            <li class="mr-3"><a href="https://facebook.com/uideckHQ"><i class="lni lni-facebook-filled"></i></a></li>
-                            <li class="mr-3"><a href="https://twitter.com/uideckHQ"><i class="lni lni-twitter-filled"></i></a></li>
-                            <li class="mr-3"><a href="https://instagram.com/uideckHQ"><i class="lni lni-instagram-original"></i></a></li>
-                            <li class="mr-3"><a href="#"><i class="lni lni-linkedin-original"></i></a></li>
-                        </ul>
+
                     </div> <!-- footer social -->
                     <div class="footer_copyright_content pt-4 text-center">
 
