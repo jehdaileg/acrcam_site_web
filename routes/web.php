@@ -3,6 +3,7 @@
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\FaireUnDonController;
 use App\Http\Controllers\ImageProjetController;
+use App\Http\Controllers\IndexHomeClientFrontController;
 use App\Http\Controllers\PartenaireController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ProjetController;
@@ -19,10 +20,15 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
-Route::get('/', function () {
+//Home route without database datas
+/*Route::get('/', function () {
     return view('welcome');
-})->name('HomeIndexClient');
+})->name('HomeIndexClient');    */
+
+//Home route with datas from database
+
+Route::get('/', [IndexHomeClientFrontController::class, 'homepage']);
+
 
 Route::get('/projetss', function () {
     return view('admin/projets/index');

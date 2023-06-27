@@ -532,20 +532,32 @@
             <div class="container-fluid">
                 <div class="work_wrapper relative">
                     <div class="row work_active">
+
+
+                        @foreach( $images_projets as $image)
+
                         <div class="w-full lg:w-3/12">
                             <div class="single_item mx-auto">
                                 <div class="single_work mx-3">
                                     <div class="work_image">
-                                        <img src="images_static_custom/real1.jpg" alt="work" class="w-full">
+                                        <img src="{{ asset($image->image_projet) }}" alt="work" class="w-full">
                                     </div>
                                     <div class="work_content">
                                         <a href="#" class="arrow"><i class="lni lni-chevron-right"></i></a>
-                                        <h4 class="work_title text-xl md:text-2xl"><a href="#">Marketing</a></h4>
-                                        <p class="mt-2">NoCodeAPI</p>
+                                        <h4 class="work_title text-xl md:text-2xl"><a href="#">{{ $image->projet->name }}</a></h4>
+                                        <p class="mt-2">{{ $image->projet->type_projet->nameTypeProjet }}</p>
                                     </div>
                                 </div>
                             </div> <!-- single work -->
                         </div>
+
+                        @endforeach
+
+
+
+
+
+
                         <div class="w-full lg:w-3/12">
                             <div class="single_item mx-auto">
                                 <div class="single_work mx-3">
@@ -630,6 +642,13 @@
                                 </div>
                             </div> <!-- single work -->
                         </div>
+
+
+
+
+
+
+
                     </div> <!-- row -->
                 </div>
             </div> <!-- container -->
@@ -657,51 +676,31 @@
                             <div class="tab-content">
                                 <div class="active tab-pane" id="monthlyPlan" data-tab-content>
                                     <div class="row justify-center">
-                                        <div class="w-full sm:w-9/12 md:w-7/12 lg:w-4/12">
-                                            <div class="single_pricing text-center mt-8 mx-3">
-                                                <div class="pricing_title relative inline-block">
-                                                    <img class="w-25 h-24 rounded-full" src="images_static_custom/logoISP.jpeg" alt="Rounded avatar"/>
-                                                        <path class="services_shape" id="Polygon_15" data-name="Polygon 15" d="M51.2,2.329a11,11,0,0,1,9.6,0L96.15,19.478a11,11,0,0,1,5.927,7.466l8.76,38.665a11,11,0,0,1-2.1,9.258l-24.508,30.96A11,11,0,0,1,75.6,110H36.4a11,11,0,0,1-8.625-4.173L3.266,74.867a11,11,0,0,1-2.1-9.258l8.76-38.665a11,11,0,0,1,5.927-7.466Z" fill="#f94f4f"/>
-                                                    </svg>
-                                                </div>
-                                                <div class="pricing_content mt-6">
-                                                    <span class="pricing_price font-bold text-black text-4xl">ISP/Bukavu</span>
-                                                    <p class="mt-4 leading-9">ACRCAM a travaillé et continue de travailler avec l'Institut Supérieur Pédagogique (ISP) de Bukavu sur plusieurs projets.</p>
 
-                                                </div>
-                                            </div>  <!-- single pricing -->
-                                        </div>
+                                        @foreach($partenaires as $partenaire)
 
-                                        <div class="w-full sm:w-9/12 md:w-7/12 lg:w-4/12">
-                                            <div class="single_pricing text-center mt-8 mx-3 active">
-                                                <div class="pricing_title relative inline-block">
-                                                    <img class="w-25 h-24 rounded-full" src="images_static_custom/ISTMLogo.jpg" alt="Rounded avatar"/>
-                                                        <path class="services_shape" id="Polygon_15" data-name="Polygon 15" d="M51.2,2.329a11,11,0,0,1,9.6,0L96.15,19.478a11,11,0,0,1,5.927,7.466l8.76,38.665a11,11,0,0,1-2.1,9.258l-24.508,30.96A11,11,0,0,1,75.6,110H36.4a11,11,0,0,1-8.625-4.173L3.266,74.867a11,11,0,0,1-2.1-9.258l8.76-38.665a11,11,0,0,1,5.927-7.466Z" fill="#f94f4f"/>
-                                                    </svg>
-                                                </div>
-                                                <div class="pricing_content mt-6">
-                                                    <span class="pricing_price font-bold text-black text-4xl">ISTM/Bukavu</span>
-                                                    <p class="mt-4 leading-9">ISTM a travaillé et continue de travailler avec l'Institut Supérieur des Techniques Médicales (ISTM) de Bukavu sur plusieurs projets </p>
-
-                                                </div>
-                                            </div>  <!-- single pricing -->
-                                        </div>
 
                                         <div class="w-full sm:w-9/12 md:w-7/12 lg:w-4/12">
                                             <div class="single_pricing text-center mt-8 mx-3">
                                                 <div class="pricing_title relative inline-block">
-                                                    <h4 class="title group-hover:text-white">Premium</h4>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="112" height="110" viewBox="0 0 112 110">
+                                                    <img class="w-25 h-24 rounded-full" src="{{ asset($partenaire->image_logo) }}" alt="Rounded avatar"/>
                                                         <path class="services_shape" id="Polygon_15" data-name="Polygon 15" d="M51.2,2.329a11,11,0,0,1,9.6,0L96.15,19.478a11,11,0,0,1,5.927,7.466l8.76,38.665a11,11,0,0,1-2.1,9.258l-24.508,30.96A11,11,0,0,1,75.6,110H36.4a11,11,0,0,1-8.625-4.173L3.266,74.867a11,11,0,0,1-2.1-9.258l8.76-38.665a11,11,0,0,1,5.927-7.466Z" fill="#f94f4f"/>
                                                     </svg>
                                                 </div>
                                                 <div class="pricing_content mt-6">
-                                                    <span class="pricing_price font-bold text-black text-4xl">$99.00</span>
-                                                    <p class="mt-4 leading-9">Lorem ipsum dolor sit am consetetur sadi aliquyam erat sed diam voluptua vero eos  accusam et justo duo dolores </p>
+                                                    <span class="pricing_price font-bold text-black text-4xl">{{ $partenaire->name }}</span>
+                                                    <p class="mt-4 leading-9">{{ $partenaire->commentaires }}.</p>
 
                                                 </div>
                                             </div>  <!-- single pricing -->
                                         </div>
+
+                                        @endforeach
+
+
+
+
+
                                     </div> <!-- row -->
                                 </div>
                                 <div class="tab-pane" id="yearlyPlan" data-tab-content>
@@ -1087,7 +1086,7 @@
             <div class="container">
                 <div class="footer_widget pt-18 pb-120">
                     <div class="row justify-center">
-                        <div class="w-full md:w-1/2 lg:w-3/12">
+                        <div class="w-full md:w-1/2 lg:w-3/12 mr-2">
                             <div class="footer_about mt-13 mx-3">
                                 <div class="footer_logo">
                                     <a class="navbar-brand" href=""><img class="w-15 h-15 rounded" src="images_static_custom/ll.jpg" alt="Rounded avatar"/>
@@ -1108,10 +1107,10 @@
                                     </ul>
                                 </div> <!-- footer link -->
                                 <div class="footer_link w-1/2 md:pl-13 mt-13">
-                                    <h2 class="footer_title text-xl font-semibold text-white">Annexes</h2>
+                                    <h2 class="footer_title text-xl font-semibold text-white">Avec ACRCAM:</h2>
                                     <ul class="link pt-4">
-                                        <li><a href="#" class="text-white mt-4 hover:text-theme-color">Notre équipe</a></li>
-                                        <li><a href="#" class="text-white mt-4 hover:text-theme-color">Nous contacter</a></li>
+                                        <li><span  class="text-white mt-4 hover:text-theme-color">Vos imaginations deviennent réalité.</span></li>
+                                        <li><span  class="text-white mt-4 hover:text-theme-color">Le monde devient meilleur.</span></li>
 
                                     </ul>
                                 </div> <!-- footer link -->
