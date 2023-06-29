@@ -530,7 +530,7 @@
                 </div> <!-- row -->
             </div> <!-- container -->
             <div class="container-fluid">
-                <div class="work_wrapper relative">
+                <div class="work_wrapper relative mb-2">
                     <div class="row work_active">
 
 
@@ -650,6 +650,16 @@
 
 
                     </div> <!-- row -->
+
+                </div>
+
+                <div class="pricing_menu mt-8 pb-8">
+                    <ul class="flex justify-center">
+                        <li class="nav-item">
+                            <a class="active bg-gray text-body-color py-3 px-8 rounded-tl-full rounded-bl-full" data-tab-target="" href="/voirtouslesprojets">Voir tous les projets</a>
+                        </li>
+
+                    </ul>
                 </div>
             </div> <!-- container -->
         </section>
@@ -1101,8 +1111,8 @@
                                 <div class="footer_link w-1/2 md:pl-13 mt-13">
                                     <h2 class="footer_title text-xl font-semibold text-white">Liens Rapides</h2>
                                     <ul class="link pt-4">
-                                        <li><a href="#" class="text-white mt-4 hover:text-theme-color">Nos Projets</a></li>
-                                        <li><a href="#" class="text-white mt-4 hover:text-theme-color">Visiter Nos Locaux</a></li>
+                                        <li><a href="/voirtouslesprojets" class="text-white mt-4 hover:text-theme-color">Nos Projets</a></li>
+                                        <li><a href="/voirnoslocaux" class="text-white mt-4 hover:text-theme-color">Visiter Nos Locaux</a></li>
 
                                     </ul>
                                 </div> <!-- footer link -->

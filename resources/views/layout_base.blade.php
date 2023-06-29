@@ -2,7 +2,7 @@
 <script src="{{ asset('js/app.js') }}"></script>
 
   <!-- component -->
-<body class="bg-blue-300">
+<body class="bg-blue-200">
 	<nav class="relative px-4 py-4 flex justify-between items-center bg-white">
 
             <a viewBox="0 0 316 316" class="navbar-brand leading-none mr-10" href="/"><img class="w-10 md:w-16 rounded-full mx-auto fill-current text-gray-300" src="images_static_custom/ll.jpg" alt="Rounded avatar"/>

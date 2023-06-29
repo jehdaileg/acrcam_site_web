@@ -7,7 +7,10 @@ use App\Http\Controllers\IndexHomeClientFrontController;
 use App\Http\Controllers\PartenaireController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ProjetController;
+use App\Http\Controllers\StatController;
+use App\Http\Controllers\TeamMemberController;
 use App\Http\Controllers\TypeProjetController;
+use App\Http\Controllers\VoirTousLesProjetsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -49,13 +52,31 @@ Route::get('projets.edit/{projet}', [ProjetController::class, 'edit'])->name('ed
 //image_mangement
 Route::resource('imagesprojets', ImageProjetController::class);
 
+//voir_tous_projets_front_end_management
+Route::get('/voirtouslesprojets', [VoirTousLesProjetsController::class, 'getAllProjets']);
 
+
+//les_locaux_acrcam
+
+Route::get('/voirnoslocaux', function(){
+    return view('locauxacrcam');
+});
+
+//stats_route
+
+Route::get('/stats', [StatController::class, 'getStat'])->name('stats');
 
 
 
 //partenaires_management
 Route::resource('partenaires', PartenaireController::class);
 Route::get('partenaire.edit/{partenaire}', [PartenaireController::class, 'edit'])->name('editPart');
+
+
+//Team Members staffs management
+
+Route::resource('members', TeamMemberController::class);
+Route::get('member.edit/{member}', [TeamMemberController::class, 'edit'])->name('editMember');
 
 
 //Faire un Don management part

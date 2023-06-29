@@ -11,8 +11,9 @@ class VoirTousLesProjetsController extends Controller
 
     public function getAllProjets()
     {
-       // $images_projets = ImageProjet::with('projet')->latest()->paginate(8);
 
-        // return view('welcome', compact('partenaires', 'images_projets'));
+        $images_projets = ImageProjet::with('projet')->latest()->paginate(20);
+
+         return view('voirtouslesprojets', compact('images_projets'));
     }
 }

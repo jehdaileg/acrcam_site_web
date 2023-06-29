@@ -15,7 +15,7 @@ class ImageProjetController extends Controller
     public function index()
     {
         //
-        $images = ImageProjet::all();
+        $images = ImageProjet::latest()->paginate(20);
 
         return view('admin.imagesprojets.index', compact('images'));
     }

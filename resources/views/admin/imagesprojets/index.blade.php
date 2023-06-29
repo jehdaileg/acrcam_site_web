@@ -104,7 +104,7 @@
           @endforeach
     </tbody>
 
-
+{{ $images->links() }}
   </table>
 
 
