@@ -33,6 +33,14 @@ class TeamMemberController extends Controller
     public function store(Request $request)
     {
         //
+      //  dd('test');
+
+    //  dd($request->all());
+
+      //$datas_to_save = $request->all();
+
+       // dd('store_member');
+
         $datas = $request->validate([
             'identifiant_agent' => 'required',
             'nom_complet' => 'required',
@@ -43,6 +51,8 @@ class TeamMemberController extends Controller
             'typeagent' => 'required',
 
         ]);
+
+       // dd($datas);
 
         $file_name = $request->file('photo')->getClientOriginalName();
 

@@ -30,7 +30,7 @@ use Illuminate\Support\Facades\Route;
 
 //Home route with datas from database
 
-Route::get('/', [IndexHomeClientFrontController::class, 'homepage']);
+Route::get('/', [IndexHomeClientFrontController::class, 'homepage'])->name('HomeIndexClient');
 
 
 Route::get('/projetss', function () {

@@ -30,8 +30,10 @@ class StatController extends Controller
 
         $images = ImageProjet::all();
 
+        $members = TeamMember::all();
 
-        return view('stats', compact('images','projets', 'partenaires', 'contacts', 'type_de_projets', 'donateurs', 'staffs'));
+
+        return view('stats', compact('members','images','projets', 'partenaires', 'contacts', 'type_de_projets', 'donateurs', 'staffs'));
 
     }
 }

@@ -9,5 +9,10 @@ class TeamMember extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['identifiant_agent', 'nom_complet', 'adresse_de_residence', 'telephone', 'poste', 'nombre_de_mois_contrat', 'typeagent', 'photo'];
+    protected $guarded = [
+
+
+    ];
+
+    //protected $fillable = ['identifiant_agent', 'nom_complet', 'adresse_de_residence', 'telephone', 'poste', 'nombre_de_mois_contrat', 'typeagent', 'photo'];
 }
