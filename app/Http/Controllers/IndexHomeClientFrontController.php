@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\ImageActivite;
 use App\Models\Partenaire;
 use App\Models\Projet;
 use App\Models\ImageProjet;
@@ -26,6 +27,10 @@ class IndexHomeClientFrontController extends Controller
 
     $images_projets = ImageProjet::with('projet')->latest()->paginate(8);
 
-        return view('welcome', compact('partenaires', 'images_projets'));
+    //activities_images
+
+    $images_activites = ImageActivite::with('activite')->latest()->paginate(8);
+
+        return view('welcome', compact('partenaires', 'images_projets', 'images_activites'));
     }
 }

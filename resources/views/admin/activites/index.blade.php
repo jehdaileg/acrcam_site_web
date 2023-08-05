@@ -3,7 +3,7 @@
 
 @section('main_content_admin_part')
 
-    <h5 class="text-gray-800 text-xl font-bold">Images des Projets</h5>
+    <h5 class="text-gray-800 text-xl font-bold">Gestion des Activités</h5>
 
     <div class="mt-2 mb-2">
         @if($message = Session::get('success'))
@@ -64,15 +64,17 @@
     </div>
 
     <div class="mt-7 mb-5">
-        <a href="{{ route('imagesprojets.create') }}" class="px-4 py-4 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-8 sm:w-auto  py-4.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Ajouter une Image d'un projet</a>
+        <a href="{{ route('activites.create') }}" class="px-4 py-4 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-8 sm:w-auto  py-4.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Ajouter une Activité</a>
 
     </div>
 
- <table class="shadow-lg bg-white border-collapse absolute">
+<table class="shadow-lg bg-white border-collapse absolute">
+
     <thead>
         <tr>
-            <th class="bg-blue-100 border text-left px-5 py-2">Nom du projet concerné</th>
-            <th class="bg-blue-100 border text-left px-5 py-2">Image</th>
+            <th class="bg-blue-100 border text-left px-5 py-2">Nom de l'activité</th>
+            <th class="bg-blue-100 border text-left px-5 py-2">Commentaire sur l'activité</th>
+            <th class="bg-blue-100 border text-left px-5 py-2">Date de réalisation</th>
             <th class="bg-blue-100 border text-left px-5 py-2">Actions</th>
 
           </tr>
@@ -81,19 +83,23 @@
 
     <tbody>
 
-        @foreach($images as $image)
+
+        @foreach($activites as $activite)
 
 
         <tr>
-            <td class="border px-5 py-2">{{ $image->projet->name }}</td>
-            <td class="border px-5 py-2"><img src="{{ asset($image->image_projet) }}" width="60" height="60" alt="" srcset=""></td>
-            <td class="border px-5 py-2 flex ">
+            <td class="border px-5 py-2">{{ $activite->nom_activite}}</td>
+            <td class="border px-5 py-2">{{ $activite->commentaires_activite}}</td>
+            <td class="border px-5 py-2">{{ $activite->date_activite}}</td>
 
-                <form action="{{ route('imagesprojets.destroy', $image->id) }}" method="post" class="mt-2">
+            <td class="border px-5 py-2 flex ">
+                <a href="{{ route('editAct', $activite) }}" class="px-2 py-2 text-white bg-green-400 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-8 sm:w-auto  py-4.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Editer</a>
+                <a href="{{ route('activites.show', $activite) }}" class="px-2 py-2 text-white bg-purple-400 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-8 sm:w-auto  py-4.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Consulter</a>
+                <form action="{{ route('activites.destroy', $activite->id) }}" method="post" class="mt-2">
                     @csrf
                     @method('DELETE')
 
-                    <button type="submit" onclick="return confirm('Voulez-vous vraiment supprimer cette image ?');" class="px-2 py-2 text-white bg-red-400 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-8 sm:w-auto  py-4.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Supprimer</button>
+                    <button type="submit" onclick="return confirm('Voulez-vous vraiment supprimer cette activité ?');" class="px-2 py-2 text-white bg-red-400 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-8 sm:w-auto  py-4.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Supprimer</button>
                    </form>
             </td>
 
@@ -104,7 +110,7 @@
           @endforeach
     </tbody>
 
-{{ $images->links() }}
+    {{ $activites->links() }}
   </table>
 
 

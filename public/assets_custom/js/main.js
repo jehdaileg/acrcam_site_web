@@ -1,7 +1,7 @@
 
 (function() {
     //===== Prealoder
-    
+
     window.onload = function () {
         window.setTimeout(fadeout, 500);
     }
@@ -10,8 +10,8 @@
         document.querySelector('.preloader').style.opacity = '0';
         document.querySelector('.preloader').style.display = 'none';
     }
-    
-    
+
+
     /*=====================================
     Sticky
     ======================================= */
@@ -35,11 +35,11 @@
             backToTo.style.display = "none";
         }
     };
-    
-    
-    // for menu scroll 
+
+
+    // for menu scroll
     var pageLink = document.querySelectorAll('.page-scroll');
-    
+
     pageLink.forEach(elem => {
         elem.addEventListener('click', e => {
             e.preventDefault();
@@ -49,7 +49,7 @@
             });
         });
     });
-    
+
     // section menu active
     function onScroll(event) {
         var sections = document.querySelectorAll('.page-scroll');
@@ -72,7 +72,7 @@
     window.document.addEventListener('scroll', onScroll);
 
     //===== close navbar-collapse when a  clicked
-    let navbarToggler = document.querySelector(".navbar-toggler");    
+    let navbarToggler = document.querySelector(".navbar-toggler");
     var navbarCollapse = document.querySelector(".navbar-collapse");
 
     document.querySelectorAll(".page-scroll").forEach(e =>
@@ -84,13 +84,13 @@
     navbarToggler.addEventListener('click', function() {
         navbarToggler.classList.toggle("active");
         // navbarCollapse.classList.toggle('show')
-    }) 
-    
-    
+    })
+
+
     // WOW active
     new WOW().init();
 
-    
+
     //======== tiny slider for work
     tns({
         container: '.work_active',
@@ -125,6 +125,44 @@
             },
         }
     });
+
+    //activite
+
+    tns({
+        container: '.activite_active',
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayText: [ ' ', ' ' ],
+        mouseDrag: true,
+        gutter: 0,
+        nav: true,
+        controls: false,
+        controlsText: [
+            '<i class="lni lni-chevron-left prev"></i>',
+            '<i class="lni lni-chevron-right next"></i>'
+        ],
+        items: 5,
+
+        responsive: {
+            0: {
+                items: 1,
+            },
+            570: {
+                items: 2,
+            },
+            850: {
+                items: 3,
+            },
+            1200: {
+                items: 4,
+            },
+            1400: {
+                items: 5,
+            },
+        }
+    });
+
+
     //======== tiny slider for team
     tns({
         container: '.team_active',
@@ -157,7 +195,7 @@
     // ================ pricing tab
     const tabs = document.querySelectorAll('[data-tab-target]')
     const tabContents = document.querySelectorAll('[data-tab-content]')
-    
+
     tabs.forEach(tab => {
       tab.addEventListener('click', () => {
         const target = document.querySelector(tab.dataset.tabTarget)
@@ -172,5 +210,5 @@
       })
     })
 
-    
+
 })();

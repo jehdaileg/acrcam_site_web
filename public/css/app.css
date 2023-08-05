@@ -739,6 +739,12 @@ select {
 .top-4 {
   top: 16px;
 }
+.top-\[-400px\] {
+  top: -400px;
+}
+.top-\[80px\] {
+  top: 80px;
+}
 .z-0 {
   z-index: 0;
 }
@@ -785,6 +791,10 @@ select {
 .my-5 {
   margin-top: 20px;
   margin-bottom: 20px;
+}
+.mx-2 {
+  margin-left: 8px;
+  margin-right: 8px;
 }
 .-mr-2 {
   margin-right: -8px;
@@ -1573,6 +1583,9 @@ select {
 .pt-8 {
   padding-top: 32px;
 }
+.pl-7 {
+  padding-left: 28px;
+}
 .text-left {
   text-align: left;
 }
@@ -1869,6 +1882,9 @@ select {
 }
 .duration-75 {
   transition-duration: 75ms;
+}
+.duration-500 {
+  transition-duration: 500ms;
 }
 .ease-in {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
@@ -2415,6 +2431,10 @@ select {
     padding: 32px;
   }
 
+  .sm\:p-1 {
+    padding: 4px;
+  }
+
   .sm\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
@@ -2441,12 +2461,29 @@ select {
 }
 @media (min-width: 720px) {
 
+  .md\:static {
+    position: static;
+  }
+
+  .md\:z-auto {
+    z-index: auto;
+  }
+
+  .md\:my-0 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
   .md\:mb-2 {
     margin-bottom: 8px;
   }
 
   .md\:block {
     display: block;
+  }
+
+  .md\:flex {
+    display: flex;
   }
 
   .md\:hidden {
@@ -2489,6 +2526,14 @@ select {
     width: 66.666667%;
   }
 
+  .md\:w-auto {
+    width: auto;
+  }
+
+  .md\:items-center {
+    align-items: center;
+  }
+
   .md\:space-y-10 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(40px * calc(1 - var(--tw-space-y-reverse)));
@@ -2499,9 +2544,18 @@ select {
     padding: 20px;
   }
 
+  .md\:p-1 {
+    padding: 4px;
+  }
+
   .md\:px-6 {
     padding-left: 24px;
     padding-right: 24px;
+  }
+
+  .md\:py-0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 
   .md\:pl-13 {
@@ -2510,6 +2564,10 @@ select {
 
   .md\:pl-6 {
     padding-left: 24px;
+  }
+
+  .md\:pl-0 {
+    padding-left: 0px;
   }
 
   .md\:text-left {
@@ -2544,6 +2602,10 @@ select {
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .md\:opacity-100 {
+    opacity: 1;
   }
 }
 @media (min-width: 960px) {

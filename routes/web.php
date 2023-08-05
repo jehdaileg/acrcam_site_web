@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\ActiviteController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\FaireUnDonController;
+use App\Http\Controllers\ImageActiviteController;
 use App\Http\Controllers\ImageProjetController;
 use App\Http\Controllers\IndexHomeClientFrontController;
 use App\Http\Controllers\PartenaireController;
@@ -11,6 +13,9 @@ use App\Http\Controllers\StatController;
 use App\Http\Controllers\TeamMemberController;
 use App\Http\Controllers\TypeProjetController;
 use App\Http\Controllers\VoirTousLesProjetsController;
+use App\Http\Controllers\VoirToutesLesActivites;
+use App\Http\Controllers\VoirToutesLesActivitesController;
+use App\Models\ImageActivite;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -48,6 +53,18 @@ Route::get('typeprojet.edit/{typeprojet}', [TypeProjetController::class, 'edit']
 //projet_management
 Route::resource('projets', ProjetController::class);
 Route::get('projets.edit/{projet}', [ProjetController::class, 'edit'])->name('editProjet');
+
+
+//activite_management
+Route::get('/voirtouteslesactivites', [VoirToutesLesActivitesController::class, 'getAllActivites']);
+
+Route::resource('/activites', ActiviteController::class);
+Route::get('activites.edit/{activite}', [ActiviteController::class, 'edit'])->name('editAct');
+
+//image_activite management
+Route::resource('/imagesactivites', ImageActiviteController::class);
+
+
 
 //image_mangement
 Route::resource('imagesprojets', ImageProjetController::class);

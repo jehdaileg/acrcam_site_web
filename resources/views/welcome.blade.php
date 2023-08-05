@@ -2,12 +2,15 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <title>Laravel</title>
 
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         <link rel="stylesheet" href="{{ asset('css/customize_1.css') }}">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
            <!--====== Favicon Icon ======-->
     <link rel="shortcut icon" href="assets_custom/images/favicon.png" type="image/png">
@@ -26,7 +29,10 @@
 
 
     </head>
-    <body>
+    <body class="h-screen">
+
+    <!-- CUSTOM HEADER NAV MENU-->
+
         <div class="preloader">
             <div class="loader">
                 <div class="ytp-spinner">
@@ -46,67 +52,83 @@
 
         <!--====== PRELOADER PART ENDS ======-->
 
-        <!--====== HEADER PART START ======-->
 
         <section class="header_area">
-            <div class="navbar-area bg-white">
-                <div class="container relative">
-                    <div class="row items-center">
-                        <div class="w-full">
-                            <nav class="flex items-center justify-between py-4 navbar navbar-expand-lg">
-                                <a class="navbar-brand mr-5" href=""><img class="w-15 h-15 rounded" src="images_static_custom/ll.jpg" alt="Rounded avatar"/>
-                                    <!--<img src="assets_custom/images/logo.svg" alt="Logo">-->
 
-                                </a>
-                                <button class="block navbar-toggler focus:outline-none lg:hidden" type="button" data-toggle="collapse" data-target="#navbarOne" aria-controls="navbarOne" aria-expanded="false" aria-label="Toggle navigation">
-                                    <span class="toggler-icon"></span>
-                                    <span class="toggler-icon"></span>
-                                    <span class="toggler-icon"></span>
-                                </button>
+<div class="navbar-area bg-white nav-Links md:p-1 sm:p-1 ">
 
-                                <div id="navbarOne">
-                                    <ul id="nav" class="items-center content-start mr-auto lg:justify-end navbar-nav lg:flex">
-                                        <li class="nav-item ml-5 lg:ml-11 font-bold">
-                                            <a class="page-scroll  active" href="#home">Accueil</a>
-                                        </li>
-                                        <li class="nav-item ml-5 lg:ml-11">
-                                            <a class="page-scroll" href="#about">A propos</a>
-                                        </li>
-                                        <li class="nav-item ml-5 lg:ml-11">
-                                            <a class="page-scroll" href="#services">Services</a>
-                                        </li>
-                                        <li class="nav-item ml-5 lg:ml-11">
-                                            <a class="page-scroll" href="#work">Projets</a>
-                                        </li>
+    <div class="container relative">
+        <div class="row items-center">
+            <div class="w-full">
+                <nav class="flex items-center justify-between py-4 navbar navbar-expand-lg">
+                    <a class="navbar-brand mr-5" href=""><img class="w-15 h-15 rounded" src="images_static_custom/ll.jpg" alt="Rounded avatar"/>
+                        <!--<img src="assets_custom/images/logo.svg" alt="Logo">-->
+
+                    </a>
+                    <button onclick="onToggleMenu(this)"  name="menu"   class="hidden duration-500  block navbar-toggler focus:outline-none lg:hidden" type="button" data-toggle="collapse" data-target="#navbarOne" aria-controls="navbarOne" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="toggler-icon"></span>
+                        <span class="toggler-icon"></span>
+                        <span class="toggler-icon"></span>
+                    </button>
+
+                    <div id="navbarOne">
+                        <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+                        <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+
+                        </span>
+                        <ul id="nav" class="md:flex md:items-center md:z-auto md:static absolute bg-white w-full
+                         left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px]
+                         transition-all ease-in duration-500 ">
+
+                            <li class="nav-item ml-5 lg:ml-11 font-bold">
+                                <a class="page-scroll  active md:my-0" href="#home">Accueil</a>
+                            </li>
+                            <li class="nav-item ml-5 lg:ml-11 md:my-0">
+                                <a class="page-scroll" href="#about">A propos</a>
+                            </li>
+                            <li class="nav-item ml-5 lg:ml-11 md:my-0">
+                                <a class="page-scroll" href="#services">Services</a>
+                            </li>
+                            <li class="nav-item ml-5 lg:ml-11 md:my-0">
+                                <a class="page-scroll" href="#work">Projets</a>
+                            </li>
+
+                            <li class="nav-item ml-5 lg:ml-11 md:my-0">
+                                <a class="page-scroll" href="#activite">Activités</a>
+                            </li>
 
 
-                                        <li class="nav-item ml-5 lg:ml-11">
-                                            <a class="" href="/visions">Visions</a>
-                                        </li>
+                            <li class="nav-item ml-5 lg:ml-11 md:my-0">
+                                <a class="" href="/visions">Visions</a>
+                            </li>
 
-                                        <li class="nav-item ml-5 lg:ml-11">
-                                            <a class="page-scroll" href="#pricing">Partenaires</a>
-                                        </li>
-                                        <li class="nav-item ml-5 lg:ml-11 font-extrabold">
-                                            <a class="" href="/faireUnDon">Faire un Don</a>
-                                        </li>
+                            <li class="nav-item ml-5 lg:ml-11 md:my-0">
+                                <a class="page-scroll" href="#pricing">Partenaires</a>
+                            </li>
+                            <li class="nav-item ml-5 lg:ml-11 font-extrabold md:my-0">
+                                <a class="" href="/faireUnDon">Faire un Don</a>
+                            </li>
 
-                                        <li class="nav-item ml-5 lg:ml-11">
-                                            <a class="page-scroll" href="#contact">Contact</a>
-                                        </li>
+                            <li class="nav-item ml-5 lg:ml-11 md:my-0">
+                                <a class="page-scroll" href="#contact">Contact</a>
+                            </li>
 
-                                        <li class="nav-item ml-5 lg:ml-11">
-                                            <a class="" href="{{ route('login') }}">Connexion</a>
-                                        </li>
-                                    </ul>
-                                </div> <!-- navbar collapse -->
-                            </nav> <!-- navbar -->
-                        </div>
-                    </div> <!-- row -->
-                </div> <!-- container -->
-            </div> <!-- header navbar -->
+                            <li class="nav-item ml-5 lg:ml-11 md:my-0">
+                                <a class="" href="{{ route('login') }}">Connexion</a>
+                            </li>
+                        </ul>
+                    </div> <!-- navbar collapse -->
+                </nav> <!-- navbar -->
+            </div>
+        </div> <!-- row -->
+    </div> <!-- container -->
+</div> <!-- header navbar -->
 
-            <
+</section>
+
+
+
+
 
             <div id="home" class="header_hero bg-gray relative z-10 overflow-hidden lg:flex items-center">
 
@@ -555,100 +577,6 @@
 
 
 
-
-
-
-                        <div class="w-full lg:w-3/12">
-                            <div class="single_item mx-auto">
-                                <div class="single_work mx-3">
-                                    <div class="work_image">
-                                        <img src="images_static_custom/real2.jpg" alt="work" class="w-full">
-                                    </div>
-                                    <div class="work_content">
-                                        <a href="#" class="arrow"><i class="lni lni-chevron-right"></i></a>
-                                        <h4 class="work_title text-xl md:text-2xl"><a href="#">Creative Design</a></h4>
-                                        <p class="mt-2">UIdeck</p>
-                                    </div>
-                                </div>
-                            </div> <!-- single work -->
-                        </div>
-                        <div class="w-full lg:w-3/12">
-                            <div class="single_item mx-auto">
-                                <div class="single_work mx-3">
-                                    <div class="work_image">
-                                        <img src="images_static_custom/real3.jpg" alt="work" class="w-full">
-                                    </div>
-                                    <div class="work_content">
-                                        <a href="#" class="arrow"><i class="lni lni-chevron-right"></i></a>
-                                        <h4 class="work_title text-xl md:text-2xl"><a href="#">Web Design</a></h4>
-                                        <p class="mt-2">GrayGrids</p>
-                                    </div>
-                                </div>
-                            </div> <!-- single work -->
-                        </div>
-                        <div class="w-full lg:w-3/12">
-                            <div class="single_item mx-auto">
-                                <div class="single_work mx-3">
-                                    <div class="work_image">
-                                        <img src="images_static_custom/real4.jpg" alt="work" class="w-full">
-                                    </div>
-                                    <div class="work_content">
-                                        <a href="#" class="arrow"><i class="lni lni-chevron-right"></i></a>
-                                        <h4 class="work_title text-xl md:text-2xl"><a href="#">Analysis</a></h4>
-                                        <p class="mt-2">Ayro UI</p>
-                                    </div>
-                                </div>
-                            </div> <!-- single work -->
-                        </div>
-                        <div class="w-full lg:w-3/12">
-                            <div class="single_item mx-auto">
-                                <div class="single_work mx-3">
-                                    <div class="work_image">
-                                        <img src="images_static_custom/maq1.jpg" alt="work" class="w-full">
-                                    </div>
-                                    <div class="work_content">
-                                        <a href="#" class="arrow"><i class="lni lni-chevron-right"></i></a>
-                                        <h4 class="work_title text-xl md:text-2xl"><a href="#">SMM</a></h4>
-                                        <p class="mt-2">LineIcons</p>
-                                    </div>
-                                </div>
-                            </div> <!-- single work -->
-                        </div>
-                        <div class="w-full lg:w-3/12">
-                            <div class="single_item mx-auto">
-                                <div class="single_work mx-3">
-                                    <div class="work_image">
-                                        <img src="images_static_custom/maq2.jpg" alt="work" class="w-full">
-                                    </div>
-                                    <div class="work_content">
-                                        <a href="#" class="arrow"><i class="lni lni-chevron-right"></i></a>
-                                        <h4 class="work_title text-xl md:text-2xl"><a href="#">SEO</a></h4>
-                                        <p class="mt-2">PageBulb</p>
-                                    </div>
-                                </div>
-                            </div> <!-- single work -->
-                        </div>
-                        <div class="w-full lg:w-3/12">
-                            <div class="single_item mx-auto">
-                                <div class="single_work mx-3">
-                                    <div class="work_image">
-                                        <img src="images_static_custom/maq3.jpg" alt="work" class="w-full">
-                                    </div>
-                                    <div class="work_content">
-                                        <a href="#" class="arrow"><i class="lni lni-chevron-right"></i></a>
-                                        <h4 class="work_title text-xl md:text-2xl"><a href="#">Mobile App</a></h4>
-                                        <p class="mt-2">Rocket Internet LTD</p>
-                                    </div>
-                                </div>
-                            </div> <!-- single work -->
-                        </div>
-
-
-
-
-
-
-
                     </div> <!-- row -->
 
                 </div>
@@ -663,6 +591,63 @@
                 </div>
             </div> <!-- container -->
         </section>
+
+
+        <!-- Activites part -->
+
+        <section id="activite" class="activite_area bg-gray pt-120 pb-120">
+            <div class="container">
+                <div class="row justify-center">
+                    <div class="w-ull lg:w-1/2">
+                        <div class="section_title text-center pb-6">
+                            <h5 class="sub_title">Nos Activités</h5>
+                            <h4 class="main_title">Quelques activités récentes de Acrcam</h4>
+                        </div> <!-- section title -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+            <div class="container-fluid">
+                <div class="work_wrapper relative mb-2">
+                    <div class="row activite_active">
+
+
+                        @foreach( $images_activites as $image)
+
+                        <div class="w-full lg:w-3/12">
+                            <div class="single_item mx-auto">
+                                <div class="single_work mx-3">
+                                    <div class="work_image">
+                                        <img src="{{ asset($image->image_activite) }}" alt="work" class="w-full">
+                                    </div>
+                                    <div class="work_content">
+                                        <a href="#" class="arrow"><i class="lni lni-chevron-right"></i></a>
+                                        <h4 class="work_title text-xl md:text-2xl"><a href="#">{{ $image->activite->nom_activite }}</a></h4>
+                                        <p class="mt-2">{{ $image->activite->date_activite }}</p>
+                                    </div>
+                                </div>
+                            </div> <!-- single work -->
+                        </div>
+
+                        @endforeach
+
+
+
+                    </div> <!-- row -->
+
+                </div>
+
+                <div class="pricing_menu mt-8 pb-8">
+                    <ul class="flex justify-center">
+                        <li class="nav-item">
+                            <a class="active bg-gray text-body-color py-3 px-8 rounded-tl-full rounded-bl-full" data-tab-target="" href="/voirtouteslesactivites">Voir toutes les activités</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div> <!-- container -->
+        </section>
+
+        <!-- end of activity part-->
 
         <!--====== WORK PART ENDS ======-->
 
@@ -1164,8 +1149,12 @@
 
         <!--====== PART ENDS ======-->
 
-
-
+    <script>
+         function Menu(e){
+      let list = document.querySelector('ul');
+      e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+    }
+    </script>
 
         <!--====== Tiny Slider js ======-->
         <script src="assets_custom/js/tiny-slider.js"></script>
@@ -1175,5 +1164,15 @@
 
         <!--====== Main js ======-->
         <script src="assets_custom/js/main.js"></script>
+
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+
+
+
     </body>
 </html>

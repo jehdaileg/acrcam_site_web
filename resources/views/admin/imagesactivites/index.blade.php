@@ -3,7 +3,7 @@
 
 @section('main_content_admin_part')
 
-    <h5 class="text-gray-800 text-xl font-bold">Images des Projets</h5>
+    <h5 class="text-gray-800 text-xl font-bold">Images des Activités</h5>
 
     <div class="mt-2 mb-2">
         @if($message = Session::get('success'))
@@ -64,14 +64,14 @@
     </div>
 
     <div class="mt-7 mb-5">
-        <a href="{{ route('imagesprojets.create') }}" class="px-4 py-4 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-8 sm:w-auto  py-4.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Ajouter une Image d'un projet</a>
+        <a href="{{ route('imagesactivites.create') }}" class="px-4 py-4 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-8 sm:w-auto  py-4.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Ajouter une image d'activité</a>
 
     </div>
 
  <table class="shadow-lg bg-white border-collapse absolute">
     <thead>
         <tr>
-            <th class="bg-blue-100 border text-left px-5 py-2">Nom du projet concerné</th>
+            <th class="bg-blue-100 border text-left px-5 py-2">Nom de l'activité concernée</th>
             <th class="bg-blue-100 border text-left px-5 py-2">Image</th>
             <th class="bg-blue-100 border text-left px-5 py-2">Actions</th>
 
@@ -85,11 +85,11 @@
 
 
         <tr>
-            <td class="border px-5 py-2">{{ $image->projet->name }}</td>
-            <td class="border px-5 py-2"><img src="{{ asset($image->image_projet) }}" width="60" height="60" alt="" srcset=""></td>
+            <td class="border px-5 py-2">{{ $image->activite->nom_activite }}</td>
+            <td class="border px-5 py-2"><img src="{{ asset($image->image_activite) }}" width="60" height="60" alt="" srcset=""></td>
             <td class="border px-5 py-2 flex ">
 
-                <form action="{{ route('imagesprojets.destroy', $image->id) }}" method="post" class="mt-2">
+                <form action="{{ route('imagesactivites.destroy', $image->id) }}" method="post" class="mt-2">
                     @csrf
                     @method('DELETE')
 
