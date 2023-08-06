@@ -112,10 +112,6 @@
                             <li class="nav-item ml-5 lg:ml-11 md:my-0">
                                 <a class="page-scroll" href="#contact">Contact</a>
                             </li>
-
-                            <li class="nav-item ml-5 lg:ml-11 md:my-0">
-                                <a class="" href="{{ route('login') }}">Connexion</a>
-                            </li>
                         </ul>
                     </div> <!-- navbar collapse -->
                 </nav> <!-- navbar -->
@@ -238,7 +234,10 @@
                                     dans le domaine de la construction, la
                                     réhabilitation, l’aménagement et
                                     l’assainissement principalement en bâtiment
-                                    ainsi que l’environnement dans le milieu urbain, périurbain et rural.</p>
+                                    ainsi que l’environnement dans le milieu urbain, périurbain et rural.
+                                    Fondée il y a 17 années, notre structure est un acteur majeur dans le domaine de la construction.
+                                    Notre gamme de services est vaste et diversifiée, reflétant notre engagement à répondre à tous les besoins de nos clients.
+                                </p>
 
 
                                 <div class="hero_btn mt-10">
@@ -981,6 +980,25 @@
                                     <div class="team_content py-5 px-8 relative">
                                         <h4 class="team_name text-xl md:text-2xl"><a href="#" class="text-black group-hover:text-white">Gisèle</a></h4>
                                         <p class="mt-2 transition-all duration-300 group-hover:text-white">Receptionniste</p>
+                                    </div>
+                                </div> <!-- single team -->
+                            </div>
+                        </div>
+
+
+                        <div class="w-full lg:w-4/12">
+                            <div class="single_team_item mx-auto">
+                                <div class="single_team mx-3">
+                                    <div class="team_image relative">
+                                        <img src="team_acrcam/jonathan_21.jpg" alt="team" class="w-full">
+                                        <ul class="social absolute top-4 right-8">
+                                            <li><a href="#"><i class="lni lni-facebook-filled"></i></a></li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="team_content py-5 px-8 relative">
+                                        <h4 class="team_name text-xl md:text-2xl"><a href="#" class="text-black group-hover:text-white">Patrick Baguma</a></h4>
+                                        <p class="mt-2 transition-all duration-300 group-hover:text-white">Magasinier</p>
                                     </div>
                                 </div> <!-- single team -->
                             </div>

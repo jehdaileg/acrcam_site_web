@@ -10,13 +10,10 @@
         <div class="max-w-sm rounded overflow-hidden shadow-lg">
 
             <div class="px-6 py-4">
-              <div class="font-bold text-xl mb-2">Buts et Objectifs de ACRCAM</div>
+              <div class="font-bold text-xl mb-2">Etude et conception des plans et maquettes</div>
               <p class="text-gray-700 text-base">
-                ACRCAM asbl pour buts:
-
-                -	D’assurer un meilleur encadrement de la main d’œuvre des démunis pour participer à la lutte contre le chômage des jeunes désœuvrés ;
-                -	Doter à notre population les meilleures conditions d’habitation qui répondent aux normes urbanistiques et environnementales par ses techniques de construction et d’assainissement ;
-                -	Garantir une assistance d’urgence humanitaire à toute personne vulnérable et nécessiteuse ;
+                L'entreprise GFC/ACRCAM se spécialise dans l'étude et la conception de plans et maquettes pour différents types de projets.
+                Que ce soit pour des bâtiments résidentiels, publics, commerciaux ou industriels, GFC/ACRCAM met à disposition son expertise pour élaborer des plans détaillés et des maquettes virtuelles, permettant ainsi de visualiser et de planifier efficacement les projets de construction.
 
               </p>
             </div>
@@ -26,14 +23,10 @@
           <div class="max-w-sm rounded overflow-hidden shadow-lg">
 
             <div class="px-6 py-4">
-              <div class="font-bold text-xl mb-2">Domaines d'intervention de ACRCAM</div>
+              <div class="font-bold text-xl mb-2">Exécution et réalisation de tous les travaux de construction</div>
               <p class="text-gray-700 text-base">
-                ACRCAM asbl oriente ses actions dans trois(3) domaines de la vie humaine :
-
-                -	Les actions humanitaires
-                -	Les actions sociales
-                -	Les actions de développement
-
+                GFC/ACRCAM possède une vaste expérience dans l'exécution et la réalisation de travaux de construction.
+                Que ce soit pour des projets neufs ou des rénovations, l'entreprise est capable de gérer efficacement toutes les étapes du processus de construction, du début à la fin. GFC/ACRCAM s'assure de respecter les normes de qualité et de sécurité les plus élevées, tout en veillant à ce que les projets soient réalisés dans les délais impartis.
 
               </p>
             </div>
@@ -43,17 +36,10 @@
             <div class="max-w-sm rounded overflow-hidden shadow-lg">
 
             <div class="px-6 py-4">
-              <div class="font-bold text-xl mb-2">ACRCAM Organise également des formations</div>
+              <div class="font-bold text-xl mb-2">Promotion immobilière</div>
               <p class="text-gray-700 text-base">
-                Au profit de la population de la province du Sud-Kivu, ACRCAM organise des formations suivantes, afin des permettre aux intéressés d’être utiles à la société dans moins de temps, et quelle que soit leur position économique.
-Ainsi, un Centre de Formation agréé, par les institutions compétentes de tutelle, est ouvert dans les locaux d’ACRCAM et dans lequel les matières ci-après sont apprises :
--	La langue chinoise : pour tous les opérateurs économiques dont les activités ont un lien avec la chine, pour les chercheurs d’emploi dans des entreprises chinoises et enfin les élèves qui envisagent d’aller faire les études supérieures en chine.
--	L’anglais américain : cette formation intéresse toute personne qui veut apprendre ou perfectionner ses connaissances en anglais américain.
--	La technologie de bâtiment : il s’agit d’un programme de formation accélérée et recyclage en logiciels de construction et qui sera sanctionnée par un brevet de formation.
--	Le bâtiment et construction moderne : pour toutes les personnes qui désirent apprendre ou renforcer les connaissances dans ce domaine.
--	L’élevage des bêtes de race améliorée.
-
-
+                GFC/ACRCAM est également engagée dans la promotion immobilière. L'entreprise identifie et développe des opportunités dans le secteur de l'immobilier, que ce soit pour des projets résidentiels, commerciaux ou industriels.
+                GFC s'occupe de l'acquisition des terrains, de la de la facilitation d’achat et vente des parcelles et maison en mettant en contact les personnes en besoin d’achat et ceux en besoin de vendre.
 
               </p>
             </div>
@@ -69,19 +55,10 @@ Ainsi, un Centre de Formation agréé, par les institutions compétentes de tute
         <div class="max-w-sm rounded overflow-hidden shadow-lg">
 
             <div class="px-6 py-4">
-              <div class="font-bold text-xl mb-2">Actions Humanitaires</div>
+              <div class="font-bold text-xl mb-2">Construction et réhabitation des réseaux routiers</div>
               <p class="text-gray-700 text-base">
-
-                -	En vue de la matérialisation de l’objectif poursuivi en ce qui est de l’encadrement et la défense des droits des personnes démunies et vulnérables, en l’occurrence la personne
-
-de troisième âge (vieilles et vieux, veuves et veufs et tout autre démuni), ACRCAM asbl a ouvert un Département des PTA pour cette fin.
-
-               Ainsi, proportionnellement à ses moyens, ACRCAM asbl intervient en faveur de cette catégorie des personnes dans le domaine de la santé, celui de l’alimentation saine et la résolution pacifique des conflits.
-
-               -Un appui matériel, moral et social aux enfants orphelins, enfants de la rue et un accompagnement social et juridique aux enfants victimes du proxénétisme, ACRCAM asbl supporte les frais de scolarisation de plus de 50 enfants dans différents territoires de la province du Sud-Kivu, et leur octroie des kits scolaires en attendant la matérialisation de leur hébergement dans un orphelinat, dans les jours qui viennent.
-Une fois dans l’orphelinat, des formations en métiers leur seront assurées en vue de leur insertion sociale le temps de leur âge majeur.
-
-
+                GFC/ACRCAM possède une expertise solide dans la construction et la réhabilitation des réseaux routiers.
+                L'entreprise réalise des travaux de voirie, tels que la construction de nouvelles routes, l'entretien des chaussées, la mise en place de signalisation routière, et la réhabilitation des infrastructures existantes. GFC/ACRCAM s'engage à fournir des solutions durables et efficaces pour répondre aux besoins de mobilité des populations.
 
               </p>
             </div>
@@ -91,10 +68,9 @@ Une fois dans l’orphelinat, des formations en métiers leur seront assurées e
           <div class="max-w-sm rounded overflow-hidden shadow-lg">
 
             <div class="px-6 py-4">
-              <div class="font-bold text-xl mb-2">Actions sociales</div>
+              <div class="font-bold text-xl mb-2">Fourniture de divers aux personnes, agences et organisations</div>
               <p class="text-gray-700 text-base">
-              Les actions sociales d’ACRCAM au compte de la population du Sud-Kivu se résument dans le principe de la lutte contre le chômage par la promotion du droit à l’emploi à toute personne vulnérable démunie et désœuvrée (surtout les jeunes).
-
+                GFC/ACRCAM fournit une gamme diversifiée de produits et de services aux particuliers, aux agences gouvernementales et aux organisations ayant des besoins spécifiques. Cela peut inclure des services de consultation, des équipements spécialisés, des matériaux de construction, des solutions logistiques, etc. GFC/ACRCAM s'efforce de répondre efficacement aux demandes de ses clients.
 
               </p>
             </div>
@@ -104,9 +80,9 @@ Une fois dans l’orphelinat, des formations en métiers leur seront assurées e
            <div class="max-w-sm rounded overflow-hidden shadow-lg">
 
             <div class="px-6 py-4">
-              <div class="font-bold text-xl mb-2">Actions de Développement</div>
+              <div class="font-bold text-xl mb-2">Etude et électrification des agglomérations rurales</div>
               <p class="text-gray-700 text-base">
-                Dans son programme de développement en lutte contre les constructions anarchiques dans la province du Sud-Kivu, ACRCAM conçoit à ces jours un plan de désengorgement et de l’extension de la ville de Bukavu vers des sites appropriés et viables, qui sera présenté d’ici peu aux autorités politico-administratives et notables de la province pour un lobbying de sa matérialisation auprès du gouvernement national et d’autres partenaires internationaux.
+                GFC/ACRCAM met également ses compétences au service de l'étude et de l'électrification des agglomérations rurales. L'entreprise effectue des études approfondies pour évaluer les besoins en matière d'électrification des zones rurales, puis met en œuvre des solutions adaptées, telles que l'installation de réseaux électriques et la mise en place de sources d'énergie renouvelable, pour améliorer l'accès à l'électricité dans ces régions.
 
               </p>
             </div>
