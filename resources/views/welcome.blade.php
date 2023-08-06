@@ -122,141 +122,56 @@
 
 </section>
 
+<section class="text-gray-600 body-font pt-14">
 
+    @if($message = Session::get('success_contact'))
 
+    <div class="container rounded-sm text-white bg-green-400 pt-14">
 
+        <h3> Félicitations !  {{ $message }} </h3>
 
-            <div id="home" class="header_hero bg-gray relative z-10 overflow-hidden lg:flex items-center">
-
-
-                <div class="hero_shape shape_1">
-                    <img src="assets_custom/images/shape/shape-1.svg" alt="shape">
-                </div><!-- hero shape -->
-                <div class="hero_shape shape_2">
-                    <img src="assets_custom/images/shape/shape-2.svg" alt="shape">
-                </div><!-- hero shape -->
-                <div class="hero_shape shape_3">
-                    <img src="assets_custom/images/shape/shape-3.svg" alt="shape">
-                </div><!-- hero shape -->
-                <div class="hero_shape shape_4">
-                    <img src="assets_custom/images/shape/shape-4.svg" alt="shape">
-                </div><!-- hero shape -->
-                <div class="hero_shape shape_6">
-                    <img src="assets_custom/images/shape/shape-1.svg" alt="shape">
-                </div><!-- hero shape -->
-                <div class="hero_shape shape_7">
-                    <img src="assets_custom/images/shape/shape-4.svg" alt="shape">
-                </div><!-- hero shape -->
-                <div class="hero_shape shape_8">
-                    <img src="assets_custom/images/shape/shape-3.svg" alt="shape">
-                </div><!-- hero shape -->
-                <div class="hero_shape shape_9">
-                    <img src="assets_custom/images/shape/shape-2.svg" alt="shape">
-                </div><!-- hero shape -->
-                <div class="hero_shape shape_10">
-                    <img src="assets_custom/images/shape/shape-4.svg" alt="shape">
-                </div><!-- hero shape -->
-                <div class="hero_shape shape_11">
-                    <img src="assets_custom/images/shape/shape-1.svg" alt="shape">
-                </div><!-- hero shape -->
-                <div class="hero_shape shape_12">
-                    <img src="assets_custom/images/shape/shape-2.svg" alt="shape">
-                </div><!-- hero shape -->
-
-
-                <div class="container">
-
-                    @if($message = Session::get('success_contact'))
-
-                    <div
-  class="font-regular relative block w-full max-w-screen-md rounded-lg bg-green-500 px-4 py-4 text-base text-white"
-  data-dismissible="alert"
->
-  <div class="absolute top-2 left-2">
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      fill="currentColor"
-      aria-hidden="true"
-      class="mt-px h-6 w-6"
-    >
-      <path
-        fill-rule="evenodd"
-        d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
-        clip-rule="evenodd"
-      ></path>
-    </svg>
-  </div>
-  <div class="ml-8 mr-12">
-    <h5 class="block font-sans text-xl font-semibold leading-snug tracking-normal text-white antialiased">
-      Félicitations !
-    </h5>
-    <p class="mt-2 block font-sans text-base font-normal leading-relaxed text-white antialiased">
-     {{ $message }}
-    </p>
-  </div>
-  <div
-    data-dismissible-target="alert"
-    data-ripple-dark="true"
-    class="absolute top-3 right-3 w-max rounded-lg transition-all hover:bg-white hover:bg-opacity-20"
-  >
-    <div role="button" class="w-max rounded-lg p-1">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="h-6 w-6"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-        stroke-width="2"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          d="M6 18L18 6M6 6l12 12"
-        ></path>
-      </svg>
     </div>
-  </div>
-</div>
+
     @endif
 
-
-                    <div class="row">
-                        <div class="w-full lg:w-1/2">
-                            <div class="header_hero_content pt-150 lg:pt-0">
-                                <h2 class="hero_title text-2xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-5xl font-extrabold">Bienvenue sur le site officiel de GFC/ACRCAM <span class="text-theme-color"> !!!</span></h2>
-                                <p class="mt-8 lg:mr-8"> <span class="font-bold">Association pour la Construction,
-                                    Réhabilitation, Conservation et
-                                    Assainissement par la Main d’œuvre en
-                                    faveur des démunis,</span> est une association sans but lucratif,
-                                    apolitique et non confessionnelle. Elle regroupe
-                                    des ingénieurs et maçons qualifiés qui œuvrent
-                                    dans le domaine de la construction, la
-                                    réhabilitation, l’aménagement et
-                                    l’assainissement principalement en bâtiment
-                                    ainsi que l’environnement dans le milieu urbain, périurbain et rural.
-                                    Fondée il y a 17 années, notre structure est un acteur majeur dans le domaine de la construction.
-                                    Notre gamme de services est vaste et diversifiée, reflétant notre engagement à répondre à tous les besoins de nos clients.
-                                </p>
+    <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
 
 
-                                <div class="hero_btn mt-10">
-                                    <a class="main-btn page-scroll" href="#contact">Expérimenter.</a>
-                                </div>
+      <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Bienvenue sur le site officiel de GFC/ACRCAM
+          <br class="hidden lg:inline-block">de GFC/ACRCAM
+        </h1>
+        <p class="mb-8 leading-relaxed">Association pour la Construction,
+            Réhabilitation, Conservation et
+            Assainissement par la Main d’œuvre en
+            faveur des démunis,</span> est une association sans but lucratif,
+            apolitique et non confessionnelle. Elle regroupe
+            des ingénieurs et maçons qualifiés qui œuvrent
+            dans le domaine de la construction, la
+            réhabilitation, l’aménagement et
+            l’assainissement principalement en bâtiment
+            ainsi que l’environnement dans le milieu urbain, périurbain et rural.
+            Fondée il y a 17 années, notre structure est un acteur majeur dans le domaine de la construction.
+            Notre gamme de services est vaste et diversifiée, reflétant notre engagement à répondre à tous les besoins de nos clients.</p>
+        <div class="flex justify-center">
+          <a  href="#contact" class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Expérimenter</a>
 
-                            </div> <!-- header hero content -->
-                        </div>
-                    </div> <!-- row -->
-                </div> <!-- container -->
-                <div class="header_shape hidden lg:block"></div>
+        </div>
+      </div>
+      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+        <img class="object-cover object-center rounded" alt="hero" src="images_static_custom/3.jpg">
+      </div>
+    </div>
+  </section
 
-                <div class="header_image flex items-center">
-                    <div class="image 4xl:pl-30">
-                        <img src="images_static_custom/construct.png" alt="Header Image">
-                    </div>
-                </div> <!-- header image -->
-            </div> <!-- header hero -->
-        </section>
+
+
+
+
+
+
+
+
 
         <!--====== HEADER PART ENDS ======-->
 
@@ -1071,8 +986,8 @@
                                         <p class="form-message mx-3"></p>
                                         <div class="w-full">
                                             <div class="mx-3">
-                                                <div class="single_form mt-8">
-                                                    <button type="submit" class="main-btn contact-btn">Envoyer</button>
+                                                <div class="">
+                                                    <button type="submit" class="p-4 rounded-sm bg-slate-400 text-white">Envoyer</button>
                                                 </div> <!-- single form -->
                                             </div>
                                         </div>
